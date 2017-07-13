@@ -1,0 +1,46 @@
+{
+	"code": 0,
+	"msg": "success",
+	"data": [
+        {
+            "id": 112,
+            "name": "大连电瓷",
+            "in_price": 44.09,
+            "out_price": "46.10",
+            "operate_day": 45,
+            "in_date": "2016-12-06",
+            "out_date": 1481073495,
+            "income": 4.56
+        },
+        {
+            "id": 50,
+            "name": "中信证券",
+            "in_price": 6.33,
+            "out_price": "17.48",
+            "operate_day": 72,
+            "in_date": "2016-11-09",
+            "out_date": 1479905941,
+            "income": 176.15
+        },
+        {
+            "id": 52,
+            "name": "东风汽车",
+            "in_price": 5.55,
+            "out_price": "7.55",
+            "operate_day": 72,
+            "in_date": "2016-11-09",
+            "out_date": 1479905941,
+            "income": 36.04
+        },
+        {
+            "id": 83,
+            "name": "武钢股份",
+            "in_price": 9.6,
+            "out_price": "3.28",
+            "operate_day": 72,
+            "in_date": "2016-11-09",
+            "out_date": 1479905941,
+            "income": -65.83
+        }
+    ]
+}

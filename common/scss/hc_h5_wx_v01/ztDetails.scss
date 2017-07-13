@@ -1,0 +1,160 @@
+/**
+ * @authors chenfuxin (since1991_vip@163.com)
+ * @date    2017-01-20 10:24:50
+ */
+
+@import '../../../static/scss/_mobile_normalize.scss';
+@mixin transition($arr) {
+    -webkit-transition: $arr;
+    -moz-transition: $arr;
+    -ms-transition: $arr;
+    -o-transition: $arr;
+    transition: $arr;
+}
+
+@mixin transform($arr) {
+    -webkit-transform: $arr;
+    -moz-transform: $arr;
+    -ms-transform: $arr;
+    -o-transform: $arr;
+    transform: $arr;
+}
+
+@mixin animation($arr) {
+    -webkit-animation: $arr;
+    -moz-animation: $arr;
+    -ms-zoom-animation: $arr;
+    -o-animation: $arr;
+    animation: $arr;
+}
+
+@mixin pos {
+    position: relative;
+}
+
+@mixin abs {
+    position: absolute;
+}
+
+@mixin abs-lt {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+//Your style Here
+html,
+body {
+    height: 100%;
+    font-size: .2rem;
+}
+
+body {
+    background: #fff;
+    font-family: "Microsoft Yahei";
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="text"] {
+    -webkit-appearance: none;
+}
+
+.viewport {
+    width: 100%;
+    max-width: 7.5rem;
+    margin: 0 auto;
+    background: #fff;
+    .lazy {
+        width: 100%;
+    }
+}
+
+.spacing-line {
+    background: #f2f2f2;
+    width: 100%;
+    max-width: 7.5rem;
+    position: fixed;
+    left: 50%;
+    top: 0;
+    margin-left: -3.75rem;
+    z-index: 9;
+}
+
+.section-header {
+    height: .8rem;
+    background: #fff;
+    margin-top: .1rem;
+    .bj-nav {
+        padding: 0 .28rem;
+    }
+    .nav-box {
+        padding: 0 .35rem;
+        position: relative;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-webkit;
+        display: -webkit-box;
+        div {
+            display: inline-block;
+            font-size: .3rem;
+            color: #ff4700;
+            width: 3rem;
+            text-align: center;
+            flex: 1;
+            -webkit-box-flex: 1;
+            border-left: 1px solid #e6e6e6;
+            margin-top: .25rem;
+            &:first-child {
+                border-left: 0;
+            }
+        }
+        a {
+            color: #ff4700;
+            display: inline-block;
+            width: 2.5rem;
+            font-size: .3rem;
+        }
+        .tab-line {
+            display: block;
+            position: absolute;
+            top: .77rem;
+            left: .63rem;
+            width: 2.5rem;
+            height: .03rem;
+            background: #ff4700;
+        }
+    }
+}
+
+.section-wrapper-1 {
+    position: relative;
+    overflow: hidden;
+    width: 7.5rem;
+    height: auto;
+    margin-top: .92rem;
+    img {
+        width: 7.5rem;
+        height: auto;
+        overflow: hidden;
+    }
+}
+
+.section-wrapper-2 {
+    position: fixed;
+    bottom: 0;
+    height: 2.03rem;
+    text-align: center;
+    a {
+        display: block;
+        width: 7.5rem;
+        height: 2.03rem;
+        overflow: hidden;
+    }
+    img {
+        width: 7.5rem;
+        height: 2.03rem;
+        overflow: hidden;
+    }
+}

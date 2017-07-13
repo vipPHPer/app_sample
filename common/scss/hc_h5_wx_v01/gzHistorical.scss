@@ -1,0 +1,182 @@
+/**
+ * @authors chenfuxin (since1991_vip@163.com)
+ * @date    2017-01-20 16:01:09
+ */
+
+@import '../../../static/scss/_mobile_normalize.scss';
+@mixin transition($arr) {
+    -webkit-transition: $arr;
+    -moz-transition: $arr;
+    -ms-transition: $arr;
+    -o-transition: $arr;
+    transition: $arr;
+}
+
+@mixin transform($arr) {
+    -webkit-transform: $arr;
+    -moz-transform: $arr;
+    -ms-transform: $arr;
+    -o-transform: $arr;
+    transform: $arr;
+}
+
+@mixin animation($arr) {
+    -webkit-animation: $arr;
+    -moz-animation: $arr;
+    -ms-zoom-animation: $arr;
+    -o-animation: $arr;
+    animation: $arr;
+}
+
+@mixin pos {
+    position: relative;
+}
+
+@mixin abs {
+    position: absolute;
+}
+
+@mixin abs-lt {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+//Your style Here
+html,
+body {
+    height: 100%;
+    font-size: .2rem;
+}
+
+body {
+    background: #fff;
+    font-family: "Microsoft Yahei";
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="text"] {
+    -webkit-appearance: none;
+}
+
+.viewport {
+    width: 100%;
+    max-width: 7.5rem;
+    margin: 0 auto;
+    background: #fff;
+    .lazy {
+        width: 100%;
+    }
+}
+
+.spacing-line {
+    background: #f2f2f2;
+    width: 100%;
+    max-width: 7.5rem;
+    position: fixed;
+    left: 50%;
+    top: 0;
+    margin-left: -3.75rem;
+    z-index: 9;
+}
+
+.section-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 7.5rem;
+    height: .8rem;
+    z-index: 99;
+    background: #fff;
+    border-top: .1rem solid #f2f2f2;
+    .bj-nav {
+        padding: 0 .28rem;
+    }
+    .nav-box {
+        padding: 0 .35rem;
+        position: relative;
+        display: flex;
+        display: -webkit-flex;
+        display: -ms-webkit;
+        display: -webkit-box;
+        div {
+            display: inline-block;
+            font-size: .3rem;
+            color: #ff4700;
+            width: 3rem;
+            text-align: center;
+            flex: 1;
+            -webkit-box-flex: 1;
+            border-left: 1px solid #e6e6e6;
+            margin-top: .25rem;
+            &:first-child {
+                border-left: 0;
+            }
+        }
+        a {
+            color: #ff4700;
+            display: inline-block;
+            width: 2.5rem;
+            font-size: .3rem;
+        }
+        .tab-line {
+            display: block;
+            position: absolute;
+            top: .77rem;
+            right: .63rem;
+            width: 2.5rem;
+            height: .03rem;
+            background: #ff4700;
+        }
+    }
+}
+
+.container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: .9rem;
+    padding-bottom: .94rem;
+    .content-box {
+        width: 10rem;
+        font-size: .3rem;
+        padding-bottom: .3rem;
+    }
+    .one {
+        text-align: center;
+        height: .8rem;
+        line-height: .8rem;
+        border-bottom: 1px solid #ddd;
+        margin-left: .24rem;
+        margin-right: .24rem;
+        color: #221815;
+        li {
+            white-space: nowrap;
+        }
+    }
+    .title {
+        height: .65rem;
+        padding-top: .05rem;
+        line-height: .65rem;
+        border-bottom: none;
+        background: #efefef;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 .24rem;
+        font-size: .26rem;
+        color: #727271;
+        li {
+            overflow: hidden;
+            height: auto;
+        }
+    }
+    .red {
+        color: #ff0000;
+    }
+    .green {
+        color: #0dc240;
+    }
+}
