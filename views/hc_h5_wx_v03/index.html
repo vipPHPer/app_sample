@@ -12,7 +12,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="pragma" content="no-cache">
     <title>资讯详情页</title>
-    <link rel="stylesheet" href="../../public/css/hc_h5_wx_v03/style.min.css?v=0774b72">
+    <link rel="stylesheet" href="../../public/css/hc_h5_wx_v03/style.min.css?v=0d7b560">
     <script>
         (function(win) {
             var doc = win.document;
@@ -49,7 +49,7 @@
                     <h2 class="title" v-html="article_detail.title">{{article_detail.title}}</h2>
                 </div>
                 <div class="time-box">
-                    <span class="data-time" v-html="article_detail.time">{{article_detail.time}}</span>
+                    <span class="data-time" v-html="slot_time">{{slot_time}}</span>
                 </div>
                 <div class="text-box" v-html="article_detail.content">
                     {{article_detail.content}}
@@ -58,7 +58,7 @@
             <div class="section-article">
                 <div class="stock-essay-article">
                     <div class="title-box">
-                        <h2>相关文章(<em>16</em>)</h2>
+                        <h2>相关文章(<em>{{article_detail.relevant_article}}</em>)</h2>
                     </div>
                 </div>
                 <div class="stock-essay-article">
@@ -100,7 +100,7 @@
                             </div>
                         </div>
                         <div class="bottom">
-                            <span class="read">阅读<em>1024</em></span>
+                            <span class="read">阅读<em>{{article_detail.read}}</em></span>
                             <span class="share">
                                 <a href="javascript:void(0);">
                                     <img src="/public/img/hc_h5_wx_v03/share.png?v=1965a0a">
@@ -108,7 +108,7 @@
                             </span>
                             <span class="comment">
                                 <a href="javascript:void(0);">
-                                    <img src="/public/img/hc_h5_wx_v03/pl.png?v=d7ad073"><em>2520</em>
+                                    <img src="/public/img/hc_h5_wx_v03/pl.png?v=d7ad073"><em>{{article_detail.comment}}</em>
                                 </a>
                             </span>
                         </div>
@@ -119,7 +119,7 @@
     </div>
     <script src="/static/js/libs/jquery.min.js?v1.11.3"></script>
     <script src="/static/js/libs/vue.min.js?v1.0.26"></script>
-    <script src="../../public/js/hc_h5_wx_v03/script.min.js?v=6ad840d"></script>
+    <script src="../../public/js/hc_h5_wx_v03/script.min.js?v=3ac8ad1"></script>
 </body>
 
 </html>

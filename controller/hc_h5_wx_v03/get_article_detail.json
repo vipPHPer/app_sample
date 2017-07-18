@@ -6,7 +6,7 @@
     "is_show": true,
     "title": "股市女神：关键的一个交易日防止冲高回落",
     "title_img": "/public/img/hc_h5_wx_v03/wrapper-1.jpg",
-    "time": "2016-10-23 20:51:25",
+    "time": 684569654,
     "desc": "股市女神：关键的一个交易日防止冲高回落",
     "content": "<p class=\"text-a\">今日是一个承上启下的一天。</p><p class=\"text-b\">昨日出现强反，是出于跌太多，触底技术反抽的需求，加上国家护盘的作用。然而本次反弹量能依然没有完全释放出来。且之前的一根大阴柱体，实体太大杀伤力较大。因此要想修复，需要一段时间。昨日两上涨至收盘。</p><p class=\"img\"><img src=\"/public/img/hc_h5_wx_v03/wrapper-2.jpg?v=71d1d80\"></p><p class=\"text-c\">早上两市有望出现小幅高开，两市性上冲之后，压力就会出现了，主板3380点位以及3整数关口。压力都很难过去。那么冲高之后势必会有落。</p>",
     "stock_list": [{
@@ -17,6 +17,9 @@
       "name": "农业银行",
       "price": "32.88",
       "price_plus": "+12.21"
-    }]
+    }],
+    "read": 231312,
+    "comment": 5343,
+    "relevant_article": 1
   }
 }

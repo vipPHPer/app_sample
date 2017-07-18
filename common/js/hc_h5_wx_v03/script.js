@@ -25,9 +25,21 @@ _common.sendAjax(apiArticle_detailUrl, 'json', function(data) {
         article_detail: {
           content: '<p></p>',
           title: ''
-        }
+        },
+        slot_time: null
       }
     });
     vm.article_detail = data.data;
+    window.tm = vm.article_detail.time;
+    //时间戳
+    tm = parseInt(tm) * 1000;
+    var time = new Date(tm);
+    var y = time.getFullYear();
+    var m = time.getMonth() + 1;
+    var d = time.getDate();
+    var h = time.getHours();
+    var mm = time.getMinutes();
+    var s = time.getSeconds();
+    vm.slot_time = y + '-' + m + '-' + d + ' ' + h + ':' + mm + ':' + s;
   }
 });
