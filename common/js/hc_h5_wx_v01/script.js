@@ -20,11 +20,18 @@ var _common = {
   }
 };
 
+if (localStorage.getItem('session_key')) {
+  window.session_key = localStorage.getItem('session_key');
+} else {
+  window.session_key = '3a9a13274ce87b9921c78e34eeda80an';
+}
+
 _common.sendAjax('GET', apiUrl, '', 'json', function(data) {
   if (data && data.code === 0) {
-    var data = data.data;
+    window.solt_data = data.data;
+    var history_record = data.data.history_record;
 
-    if (data.length === '') {
+    if (history_record.length === '') {
       $('.font').removeClass('hide');
     } else {
       $('.font').addClass('hide');
@@ -33,11 +40,66 @@ _common.sendAjax('GET', apiUrl, '', 'json', function(data) {
     window.vm = new Vue({
       el: '#app',
       data: {
-        data: data
+        history_record_list: history_record,
+        data_info: solt_data
       }
     });
   }
 });
+
+/* 登录 */
+function login() {
+  $('#user_btn').on('click', function() {
+    var user_name = $('#user').val();
+    var user_pass = $('#pass').val();
+
+    window.layer_loading_index = layer.open({
+      content: '登录中...',
+      type: 2,
+      shadeCloss: false
+    });
+
+    if (user_name === '') {
+      layer.open({
+        content: '帐号不能为空！',
+        skin: 'msg',
+        time: 2 //2秒后自动关闭
+      });
+      layer.close(layer_loading_index);
+    } else if (user_pass === '') {
+      layer.open({
+        content: '密码不能为空！',
+        skin: 'msg',
+        time: 2 //2秒后自动关闭
+      });
+      layer.close(layer_loding_index);
+    } else {
+      var user_info = {
+        'phone': user_name,
+        'password': user_pass,
+        'session_key': session_key
+      };
+      _common.sendAjax('POST', apiLoginRegisterUrl, user_info, 'json', function(data) {
+        if (data && data.code === 0) {
+          localStorage.setItem('sessiong_key', data.data.session_key);
+          var userInfo = JSON.stringify(data.data.login);
+          localStorage.setItem('user_info', JSON.stringify(user_info));
+          layer.close(layer_loading_index);
+          $('.tab_box').hide();
+          layer.open({
+            content: '登录成功',
+            skin: 'msg',
+            time: 2
+          });
+          // window.location.reload();
+        } else {
+          alert(JSON.stringify(data.data));
+        }
+      });
+    }
+  });
+}
+login();
 
 /* 登录注册切换 */
 var $hd = $('#J_hd');

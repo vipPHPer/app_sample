@@ -43,16 +43,16 @@
                 <div class="live-infor">
                     <div class="live-name">
                         <span class="live-z">【直播中】</span>
-                        <span v-text="data.timetable.title" class="live-theme"></span>
+                        <span v-text="data_info.timetable.title" class="live-theme"></span>
                         <div class="desc-box">
                             <span class="speaker">主讲：</span>
-                            <span v-text="data.timetable.teachername" class="speaker-name"></span>
+                            <span v-text="data_info.timetable.teachername" class="speaker-name"></span>
                             <span class="sep">|</span>
-                            <span v-text="data.timetable.date" class="time"></span>
-                            <span v-text="data.timetable.starthour" class="time"></span>
-                            <span class="sep">-</span><span v-text="data.timetable.endhour" class="time"></span>
+                            <span v-text="data_info.timetable.date" class="time"></span>
+                            <span v-text="data_info.timetable.starthour" class="time"></span>
+                            <span class="sep">-</span><span v-text="data_info.timetable.endhour" class="time"></span>
                         </div>
-                        <div v-if="data.timetable.is_vip == 1" class="vip-icon">
+                        <div v-if="data_info.timetable.is_vip == 1" class="vip-icon">
                             <span>VIP</span>
                         </div>
                     </div>
@@ -100,7 +100,7 @@
         <div id="banner" class="banner">
             <div class="bd">
                 <ul class="slides">
-                    <template v-for="item in data.banner">
+                    <template v-for="item in data_info.banner">
                         <li v-if="item.is_show == 1">
                             <a v-bind:href="item.image_url">
                                 <img v-bind:src="item.image">
@@ -119,7 +119,7 @@
             </ul>
             <ul class="body_ul">
                 <li class="font">暂无数据...</li>
-                <template v-for="item in data.history_record">
+                <template v-for="item in history_record_list">
                     <li>
                         <a href="">
                             <div v-text="item.date"></div>
@@ -162,7 +162,7 @@
     <script src="/static/js/libs/jquery.min.js?v1.11.3"></script>
     <script src="/static/js/libs/vue.min.js?v1.0.26"></script>
     <script src="/static/js/libs/layer_mobile/layer.js?v2.0.0"></script>
-    <script src="../../public/js/hc_h5_wx_v01/script.min.js?v=ac55be1"></script>
+    <script src="../../public/js/hc_h5_wx_v01/script.min.js?v=70736b2"></script>
 </body>
 
 </html>
