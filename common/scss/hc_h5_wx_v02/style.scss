@@ -1,0 +1,294 @@
+/**
+ * @authors chenfuxin (since1991_vip@163.com)
+ * @date    2017-01-23 08:52:43
+ */
+
+@import '../../../static/scss/_mobile_normalize.scss';
+$imgUrl: '/public/img/hc_h5_wx_v02/';
+//Your style Here
+html,
+body {
+    height: 100%;
+    font-size: .2rem;
+}
+
+body {
+    background: #fff;
+    font-family: "Microsoft Yahei";
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="text"] {
+    -webkit-appearance: none;
+}
+
+.viewport {
+    width: 100%;
+    max-width: 7.5rem;
+    margin: 0 auto;
+    background: #fff;
+    .lazy {
+        width: 100%;
+    }
+}
+
+.zx-content {
+    margin: 0 .24rem;
+}
+
+.zx-publisher-information {
+    width: 100%;
+    height: .8rem;
+    padding-top: .16rem;
+}
+
+.zx-publisher-information-left {
+    width: .8rem;
+    height: .8rem;
+    float: left;
+    margin-right: .3rem;
+    a {
+        background: #000;
+        display: block;
+        border-radius: 100%;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+    img {
+        width: .8rem;
+    }
+}
+
+.zx-publisher-information-right {
+    width: 5.85rem;
+    float: left;
+    font-size: .24rem;
+    color: #939393;
+    line-height: .38rem;
+    p.on {
+        font-size: .3rem;
+        color: #a27428;
+        line-height: .42rem;
+    }
+}
+
+.zx-title {
+    font-weight: bold;
+    line-height: .48rem;
+    margin: .43rem 0 .43rem 0;
+    color: #171717;
+    font-size: .36rem;
+}
+
+.zx-stock-ranking {
+    font-size: .28rem;
+    font-weight: bold;
+    line-height: .5rem;
+    .flex {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    li .ct {
+        width: 2.2rem;
+        height: 1.06rem;
+        background: #f9f9f9;
+        border: 1px solid #e6e6e6;
+        margin: 0 auto;
+        text-align: center;
+        overflow: hidden;
+        border-radius: .05rem;
+    }
+    p.on {
+        font-size: .3rem;
+        color: #333;
+        height: .54rem;
+        line-height: .54rem;
+        font-weight: normal;
+        overflow: hidden;
+        background: url('#{$imgUrl}zx-stock-ranking-p-on.jpg') no-repeat center bottom;
+        background-size: 1.2rem auto;
+    }
+    span.txt-red {
+        color: #fd4e3d;
+    }
+    span.txt-green {
+        color: #50aa38;
+    }
+    .percentage {
+        font-size: .18rem;
+    }
+    p {
+        font-size: .28rem;
+    }
+}
+
+.zx-text {
+    font-size: .32rem;
+    color: #4c4c4c;
+    line-height: .56rem;
+    img {
+        max-width: 100%;
+        padding: .46rem 0;
+    }
+    p:first-child {
+        padding: .35rem 0 .28rem;
+    }
+}
+
+.spacing-line {
+    height: .15rem;
+    background: #f2f2f2;
+    margin-top: .35rem;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.comment-title {
+    height: .64rem;
+    line-height: .64rem;
+    color: #333;
+    font-size: .28rem;
+    font-weight: bold;
+    padding-left: .24rem;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.comment-content {
+    padding-left: .24rem;
+}
+
+.comment-one {
+    border-bottom: 1px solid #e6e6e6;
+    .zx-publisher-information {
+        height: .74rem;
+    }
+    .zx-publisher-information-left {
+        width: .74rem;
+        height: .74rem;
+        img {
+            width: .74rem;
+        }
+    }
+    .zx-publisher-information-right {
+        width: 4rem;
+        p.on {
+            font-size: .28rem;
+            line-height: .36rem;
+        }
+    }
+}
+
+.add-commect-btn-pic {
+    float: right;
+    width: .28rem;
+    height: .25rem;
+    margin-right: .24rem;
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url('#{$imgUrl}add-commect-btn-pic-bg.png') no-repeat center center;
+        background-size: 100% 100%;
+    }
+}
+
+.commect-one-ct {
+    color: #333;
+    font-size: .32rem;
+    padding: .09rem .24rem .24rem 1.04rem;
+    .the-landlord {
+        line-height: .45rem;
+        padding-bottom: .05rem;
+    }
+    .reply {
+        background: #f9f9f9;
+        color: #333;
+        font-size: .28rem;
+        line-height: .42rem;
+        min-height: .42rem;
+        padding: .18rem .1rem;
+        position: relative;
+        margin: .11rem 0 .12rem 0;
+        .reply-one {
+            padding-bottom: 0.06rem;
+            span.name {
+                color: #507daf;
+            }
+        }
+        .angle {
+            width: .25rem;
+            height: .11rem;
+            position: absolute;
+            top: -0.11rem;
+            left: .2rem;
+            background: url('#{$imgUrl}commect-one-ct-reply-angle.png') no-repeat center center;
+            background-size: 100%;
+        }
+    }
+}
+
+
+/*浮窗下载*/
+
+.float-ld-mask {
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.5rem;
+    z-index: 9;
+    .float-ld {
+        color: #fffefe;
+        font-size: .26rem;
+        line-height: .45rem;
+        z-index: 11;
+    }
+    .float-ld-pic {
+        float: left;
+        width: 1.14rem;
+        height: 1.14rem;
+        margin: .18rem 0 0 .24rem;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .float-ld-left {
+        float: left;
+        width: 4.4rem;
+        margin: .18rem 0 0 .16rem;
+    }
+    .float-ld-right {
+        float: left;
+        width: 1.3rem;
+        position: relative;
+        .btn {
+            width: 100%;
+            height: .5rem;
+            background: #fd4e3d;
+            color: #fff;
+            font-size: .3rem;
+            display: block;
+            line-height: .5rem;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: .5rem;
+        }
+    }
+    .float-ld-gb {
+        position: absolute;
+        right: -.12rem;
+        top: .12rem;
+        display: block;
+        width: .19rem;
+        height: .19rem;
+        background: url('#{$imgUrl}float-ld-gb.png') no-repeat center center;
+        background-size: 100%;
+    }
+}

@@ -1,0 +1,27 @@
+{
+  "code": 0,
+  "msg": "get_article_detail",
+  "data": {
+    "content": "<p>今日是一个承上启下的一天。</p><p>昨日出现强反，是出于跌太多，触底技术反抽的需求，加上国家护盘的作用。然而本次反弹量能依然没有完全释放出来。且之前的一根大阴柱体，实体太大杀伤力较大。因此要想修复，需要一段时间。昨日两上涨至收盘。</p><p><img src=\"/public/img/hc_h5_wx_v02/zx-text-img.jpg\"></p><p>早上两市有望出现小幅高开，两市性上冲之后，压力就会出现了，主板3380点位以及3整数关口。压力都很难过去。那么冲高之后势必会有落。</p><p><img src=\"/public/img/hc_h5_wx_v02/zx-text-img2.jpg\"></p><p>且恰逢15分钟的KDJ会形成死叉。加上明日8号的大允许减持潮利空。这个利空，到目前为止，管拉升之累积的短线抄底获利盘就会考虑出货行为。</p>",
+    "description": "股市女神：关键的一个交易日防止冲高回落",
+    "is_show": true,
+    "title": "股市女神：关键的一个交易日防止冲高回落",
+    "title_img": "/public/img/hc_h5_wx_v02/zx-publisher-information-left-pic.png",
+    "title_name": "牛股推荐",
+    "time": "1小时前",
+    "id": 1,
+    "stock_list": [{
+      "name": "中国银行",
+      "price": "32.68",
+      "price_plus": "-8.88"
+    }, {
+      "name": "农业银行",
+      "price": "24.67",
+      "price_plus": "-10.22"
+    }, {
+      "name": "工商银行",
+      "price": "32.89",
+      "price_plus": "+0.99"
+    }]
+  }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0, minimal-ui">
+    <meta name="imagemode" content="force">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="pragma" content="no-cache">
+    <title>资讯详情页</title>
+    <link rel="stylesheet" href="../../public/css/hc_h5_wx_v02/style.min.css?v=d353544">
+    <script>
+        (function(win) {
+            var doc = win.document;
+            var html = doc.documentElement;
+            var baseWidth = 750,
+                grids = baseWidth / 100,
+                resizeEvt = 'orientationchange' in win ? 'orientationchange' : 'resize',
+                recalc = function() {
+                    var clientWidth = html.clientWidth || 320;
+                    if (clientWidth > 750) {
+                        clientWidth = 750
+                    };
+                    html.style.fontSize = clientWidth / grids + 'px';
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', function() {
+                setTimeout(recalc)
+            }, false);
+        })(window);
+    </script>
+</head>
+
+<body>
+    <div id="app" class="viewport" v-cloak>
+        <div class="zx-content">
+            <div class="zx-publisher-information">
+                <div class="zx-publisher-information-left">
+                    <a href="javascript:void(0);">
+                        <img v-bind:src="article_detail.title_img">
+                    </a>
+                </div>
+                <div class="zx-publisher-information-right">
+                    <p class="on" v-html="article_detail.title_name"></p>
+                    <p v-html="article_detail.time"></p>
+                </div>
+            </div>
+            <div class="zx-title" v-html="article_detail.title"></div>
+            <div class="zx-stock-ranking">
+                <ul class="flex">
+                    <li class="flex-1" v-for="todo in article_detail.stock_list">
+                        <div class="ct">
+                            <p class="on" v-html="todo.name"></p>
+                            <p>
+                                <span :class="todo.price_plus > 0 ? 'txt-red' : 'txt-green'" v-html="todo.price"></span>
+                                <span :class="todo.price_plus > 0 ? 'txt-red' : 'txt-green'">
+                                    {{todo.price_plus}}<em class="percentage">%</em>
+                                </span>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="zx-text">
+                <div track-by="$index" v-html="article_detail.content"></div>
+            </div>
+        </div>
+        <div class="spacing-line"></div>
+        <div class="comment">
+            <div class="comment-title">全部评论(<span>3</span>)</div>
+            <div class="comment-content">
+                <div class="comment-one">
+                    <div class="zx-publisher-information">
+                        <div class="zx-publisher-information-left">
+                            <a href="javascript:void(0);">
+                                <img src="/public/img/hc_h5_wx_v02/zx-publisher-information-left-pic.png">
+                            </a>
+                        </div>
+                        <div class="zx-publisher-information-right">
+                            <p class="on">牛股推荐</p>
+                            <p>2小时前</p>
+                        </div>
+                        <div class="add-commect-btn-pic">
+                            <a href="javascript:void(0);"></a>
+                        </div>
+                        <div style="clear:both"></div>
+                    </div>
+                    <div class="commect-one-ct">
+                        <div class="the-landlord">早上冲高想卖，看提示止损了，现在能接回不？</div>
+                        <div class="reply">
+                            <div class="angle"></div>
+                            <div class="reply-one">
+                                <span class="name">索拉卡返回：</span>真好啊
+                            </div>
+                            <div class="reply-one">
+                                <span class="name">啊啊啊</span>回复
+                                <span class="name">索拉卡返回：</span>嘿嘿嘿。好吧
+                            </div>
+                            <div class="reply-one">
+                                <span class="name">不不不：</span>你们在瞎说什么啊。动不动啊？
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="float-ld-mask" style="display: none;">
+            <div class="float-ld">
+                <div class="float-ld-pic">
+                    <img src="/public/img/hc_h5_wx_v02/float-ld-pic.jpg">
+                </div>
+                <div class="float-ld-left">马上下载APP获取更多专业资讯解读。现在注册更有7天免费VIP领取哦~！</div>
+                <div class="float-ld-right">
+                    <a id="float-ld-gb" href="" class="float-ld-gb"></a>
+                    <a href="" class="btn">下载</a>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/libs/jquery.min.js?v1.11.3"></script>
+    <script src="/static/js/libs/vue.min.js?v1.0.26"></script>
+    <script src="../../public/js/hc_h5_wx_v02/script.min.js?v=39ebdf3"></script>
+</body>
+
+</html>
