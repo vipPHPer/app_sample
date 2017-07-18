@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0, minimal-ui">
+    <meta name="imagemode" content="force">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="pragma" content="no-cache">
+    <title>涨停雷达</title>
+    <link rel="stylesheet" href="../../public/css/hc_h5_wx_v01/ztDetails.min.css?v=4b34754">
+    <script>
+        (function(win) {
+            var doc = win.document;
+            var html = doc.documentElement;
+            var baseWidth = 750,
+                grids = baseWidth / 100,
+                resizeEvt = 'orientationchange' in win ? 'orientationchange' : 'resize',
+                recalc = function() {
+                    var clientWidth = html.clientWidth || 320;
+                    if (clientWidth > 750) {
+                        clientWidth = 750
+                    };
+                    html.style.fontSize = clientWidth / grids + 'px';
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', function() {
+                setTimeout(recalc)
+            }, false);
+        })(window);
+    </script>
+</head>
+
+<body>
+    <div class="viewport">
+        <a href="javascript:void(0);" class="enterRoom">进入直播间</a>
+        <div class="spacing-line">
+            <div class="section-header">
+                <div class="bj-nav">
+                    <div class="nav-box">
+                        <div class="left">
+                            <a href="javascript:void(0);" class="news current">了解详情</a>
+                            <span class="tab-line"></span>
+                        </div>
+                        <div class="right">
+                            <a href="ztHistorical.html" class="record">历史战绩</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-wrapper-1">
+            <img src="/public/img/hc_h5_wx_v01/hmnc-bg.jpg?v=9465d2d">
+            <div class="section-wrapper-2">
+                <a id="gourl_ab" href="javascript:void(0);">
+                    <img src="/public/img/hc_h5_wx_v01/footerbuy.png?v=8fb6d79">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

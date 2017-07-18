@@ -12,7 +12,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="pragma" content="no-cache">
     <title>跟庄雷达VIP</title>
-    <link rel="stylesheet" href="../../public/css/hc_h5_wx_v01/style.min.css?v=f510e64">
+    <link rel="stylesheet" href="../../public/css/hc_h5_wx_v01/style.min.css?v=9f60f7b">
     <script>
         (function(win) {
             var doc = win.document;
@@ -41,10 +41,20 @@
         <div id="coverMap" class="coverMap">
             <div class="live-covermap">
                 <div class="live-infor">
-                    <div class="live-name"><span class="live-z">【直播中】</span><span v-text="data.timetable.title" class="live-theme"></span>
-                        <div class="desc-box"><span class="speaker">主讲：</span><span v-text="data.timetable.teachername" class="speaker-name"></span><span class="sep">|</span><span v-text="data.timetable.date" class="time"></span><span v-text="data.timetable.starthour" class="time"></span>
-                            <span class="sep">-</span><span v-text="data.timetable.endhour" class="time"></span></div>
-                        <div v-if="data.timetable.is_vip == 1" class="vip-icon"><span>VIP</span></div>
+                    <div class="live-name">
+                        <span class="live-z">【直播中】</span>
+                        <span v-text="data.timetable.title" class="live-theme"></span>
+                        <div class="desc-box">
+                            <span class="speaker">主讲：</span>
+                            <span v-text="data.timetable.teachername" class="speaker-name"></span>
+                            <span class="sep">|</span>
+                            <span v-text="data.timetable.date" class="time"></span>
+                            <span v-text="data.timetable.starthour" class="time"></span>
+                            <span class="sep">-</span><span v-text="data.timetable.endhour" class="time"></span>
+                        </div>
+                        <div v-if="data.timetable.is_vip == 1" class="vip-icon">
+                            <span>VIP</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -63,16 +73,25 @@
             </div>
             <div id="J_bd" class="bd">
                 <ul>
-                    <li><input type="text" id="user" placeholder="请输入已有的大决策广州分公司账号" autocomplete="off"></li>
                     <li>
-                        <div class="input"><input type="password" id="pass" placeholder="请输入已有的大决策广州分公司密码" autocomplete="off"></div>
+                        <input type="text" id="user" placeholder="请输入已有的大决策广州分公司账号" autocomplete="off">
+                    </li>
+                    <li>
+                        <div class="input">
+                            <input type="password" id="pass" placeholder="请输入已有的大决策广州分公司密码" autocomplete="off">
+                        </div>
                     </li>
                     <li id="user_btn" class="btn">立即登录</li>
                 </ul>
                 <ul class="hide">
-                    <li><input id="moble" type="number" placeholder="请输入手机号码" autocomplete="off" class="mobile"><input type="button" id="code" value="获取验证码" autocomplete="off" class="code"></li>
                     <li>
-                        <div class="input"><input type="text" id="verification" placeholder="请输入验证码" autocomplete="off"></div>
+                        <input id="moble" type="number" placeholder="请输入手机号码" autocomplete="off" class="mobile">
+                        <input type="button" id="code" value="获取验证码" autocomplete="off" class="code">
+                    </li>
+                    <li>
+                        <div class="input">
+                            <input type="text" id="verification" placeholder="请输入验证码" autocomplete="off">
+                        </div>
                     </li>
                     <li id="verification_btn" class="btn">立即注册</li>
                 </ul>
@@ -80,7 +99,15 @@
         </div>
         <div id="banner" class="banner">
             <div class="bd">
-                <ul class="slides"><template v-for="item in data.banner"><li v-if="item.is_show == 1"><a v-bind:href="item.image_url"><img v-bind:src="item.image"></a></li></template></ul>
+                <ul class="slides">
+                    <template v-for="item in data.banner">
+                        <li v-if="item.is_show == 1">
+                            <a v-bind:href="item.image_url">
+                                <img v-bind:src="item.image">
+                            </a>
+                        </li>
+                    </template>
+                </ul>
             </div>
         </div>
         <div id="list" class="list">
@@ -91,21 +118,51 @@
                 <li>涨幅</li>
             </ul>
             <ul class="body_ul">
-                <li class="font">暂无数据...</li><template v-for="item in data.history_record"><li><a href=""><div v-text="item.date"></div><div v-text="item.name"></div><div :class="(item.rose &gt; 0 ? 'red' : 'green')" v-text="item.rose + '%'" class="color"></div></a></li></template></ul>
+                <li class="font">暂无数据...</li>
+                <template v-for="item in data.history_record">
+                    <li>
+                        <a href="">
+                            <div v-text="item.date"></div>
+                            <div v-text="item.name"></div>
+                            <div :class="(item.rose &gt; 0 ? 'red' : 'green')" v-text="item.rose + '%'" class="color"></div>
+                        </a>
+                    </li>
+                </template>
+            </ul>
         </div>
         <div class="footer-nav-container">
             <ul>
-                <li class="active"><a href="index.html"><i class="icon icon1"></i><br>首页</a></li>
-                <li><a href="ztDetails.html"><i class="icon icon2"></i><br>涨停雷达</a></li>
-                <li><a href="gzDetails.html"><i class="icon icon3"></i><br>跟庄雷达</a></li>
-                <li><a href=""><i class="icon icon4"></i><br>我的</a></li>
+                <li class="active">
+                    <a href="index.html">
+                        <i class="icon icon1"></i>
+                        <br>首页
+                    </a>
+                </li>
+                <li>
+                    <a href="ztDetails.html">
+                        <i class="icon icon2"></i>
+                        <br>涨停雷达
+                    </a>
+                </li>
+                <li>
+                    <a href="gzDetails.html">
+                        <i class="icon icon3"></i>
+                        <br>跟庄雷达
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class="icon icon4"></i>
+                        <br>我的
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
     <script src="/static/js/libs/jquery.min.js?v1.11.3"></script>
     <script src="/static/js/libs/vue.min.js?v1.0.26"></script>
     <script src="/static/js/libs/layer_mobile/layer.js?v2.0.0"></script>
-    <script src="../../public/js/hc_h5_wx_v01/script.min.js?v=c9fcb78"></script>
+    <script src="../../public/js/hc_h5_wx_v01/script.min.js?v=ac55be1"></script>
 </body>
 
 </html>

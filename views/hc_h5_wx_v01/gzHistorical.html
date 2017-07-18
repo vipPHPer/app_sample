@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0, minimal-ui">
+    <meta name="imagemode" content="force">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="pragma" content="no-cache">
+    <title>跟庄雷达</title>
+    <link rel="stylesheet" href="../../public/css/hc_h5_wx_v01/gzHistorical.min.css?v=e40414f">
+    <script>
+        (function(win) {
+            var doc = win.document;
+            var html = doc.documentElement;
+            var baseWidth = 750,
+                grids = baseWidth / 100,
+                resizeEvt = 'orientationchange' in win ? 'orientationchange' : 'resize',
+                recalc = function() {
+                    var clientWidth = html.clientWidth || 320;
+                    if (clientWidth > 750) {
+                        clientWidth = 750
+                    };
+                    html.style.fontSize = clientWidth / grids + 'px';
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', function() {
+                setTimeout(recalc)
+            }, false);
+        })(window);
+    </script>
+</head>
+
+<body>
+    <div id="gzHistorical" class="viewport">
+        <a href="javascript:void(0);" class="enterRoom">进入直播间</a>
+        <div class="spacing-line">
+            <div class="section-header">
+                <div class="bj-nav">
+                    <div class="nav-box">
+                        <div class="left">
+                            <a href="gzDetails.html" class="liaojie">了解详情</a>
+                        </div>
+                        <div class="right">
+                            <a href="javascript:void(0);" class="record">历史战绩</a>
+                        </div>
+                        <span class="tab-line"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="content-box">
+                <div class="one title">
+                    <ul class="flex">
+                        <li class="flex-1">个股</li>
+                        <li class="flex-1">关注价</li>
+                        <li class="flex-1">出池价</li>
+                        <li class="flex-1">收益</li>
+                        <li class="flex-1">操作天数</li>
+                        <li class="flex-1">入池日</li>
+                    </ul>
+                </div>
+                <template v-for="item in data">
+                    <div class="one">
+                        <ul class="flex">
+                            <li v-text="item.name" class="flex-1"></li>
+                            <li v-text="item.in_price" class="flex-1"></li>
+                            <li v-text="item.out_price" class="flex-1"></li>
+                            <li :class="(item.income &gt; 0 ? 'red' : 'green')" v-text="item.income + '%'" class="flex-1"></li>
+                            <li v-text="item.operate_day" class="flex-1"></li>
+                            <li v-text="item.in_date" class="flex-1"></li>
+                        </ul>
+                    </div>
+                </template>
+            </div>
+        </div>
+        <div class="footer-nav-container">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i class="icon icon1"></i>
+                        <br>首页
+                    </a>
+                </li>
+                <li>
+                    <a href="ztDetails.html">
+                        <i class="icon icon2"></i>
+                        <br>涨停雷达
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="gzDetails.html">
+                        <i class="icon icon3"></i>
+                        <br>跟庄雷达
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <i class="icon icon4"></i>
+                        <br>我的
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="/static/js/libs/jquery.min.js?v1.11.3"></script>
+    <script src="/static/js/libs/vue.min.js?v1.0.26"></script>
+    <script src="/static/js/libs/layer_mobile/layer.js?v2.0.0"></script>
+    <script src="../../public/js/hc_h5_wx_v01/gzHistorical.min.js?v=98ca060"></script>
+</body>
+
+</html>
