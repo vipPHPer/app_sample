@@ -12,7 +12,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="pragma" content="no-cache">
     <title>资讯详情页</title>
-    <link rel="stylesheet" href="../../public/css/hc_h5_wx_v02/style.min.css?v=d353544">
+    <link rel="stylesheet" href="../../public/css/hc_h5_wx_v02/style.min.css?v=5543d33">
     <script>
         (function(win) {
             var doc = win.document;
@@ -37,7 +37,7 @@
 </head>
 
 <body>
-    <div id="app" class="viewport" v-cloak>
+    <div id="app" class="viewport">
         <div class="zx-content">
             <div class="zx-publisher-information">
                 <div class="zx-publisher-information-left">
@@ -46,19 +46,19 @@
                     </a>
                 </div>
                 <div class="zx-publisher-information-right">
-                    <p class="on" v-html="article_detail.title_name"></p>
-                    <p v-html="article_detail.time"></p>
+                    <p class="on" v-html="article_detail.title_name" v-cloak>{{article_detail.title_name}}</p>
+                    <p v-html="article_detail.time" v-cloak>{{article_detail.time}}</p>
                 </div>
             </div>
-            <div class="zx-title" v-html="article_detail.title"></div>
+            <div class="zx-title" v-html="article_detail.title" v-cloak>{{article_detail.title}}</div>
             <div class="zx-stock-ranking">
                 <ul class="flex">
                     <li class="flex-1" v-for="todo in article_detail.stock_list">
                         <div class="ct">
                             <p class="on" v-html="todo.name"></p>
                             <p>
-                                <span :class="todo.price_plus > 0 ? 'txt-red' : 'txt-green'" v-html="todo.price"></span>
-                                <span :class="todo.price_plus > 0 ? 'txt-red' : 'txt-green'">
+                                <span :class="todo.price_plus > 0 ? 'txt-red' : 'txt-green'" v-html="todo.price" v-cloak>{{todo.price}}</span>
+                                <span :class="todo.price_plus > 0 ? 'txt-red' : 'txt-green'" v-cloak>
                                     {{todo.price_plus}}<em class="percentage">%</em>
                                 </span>
                             </p>
@@ -67,7 +67,7 @@
                 </ul>
             </div>
             <div class="zx-text">
-                <div track-by="$index" v-html="article_detail.content"></div>
+                <div track-by="$index" v-html="article_detail.content" v-cloak>{{article_detail.content}}</div>
             </div>
         </div>
         <div class="spacing-line"></div>

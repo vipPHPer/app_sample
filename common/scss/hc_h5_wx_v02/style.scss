@@ -12,6 +12,10 @@ body {
     font-size: .2rem;
 }
 
+[v-cloak] {
+    display: none;
+}
+
 body {
     background: #fff;
     font-family: "Microsoft Yahei";
