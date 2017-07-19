@@ -30,7 +30,7 @@ _common.sendAjax(apiUrl, 'json', function(data) {
         parts3: slot_data.three
       }
     });
-    slider();
+    // slider();
   }
 });
 
