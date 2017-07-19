@@ -20,11 +20,11 @@
     <div id="app" class="viewport">
         <div class="page-recommend">
             <div id="j_recommendList" class="section section-list">
-                <template v-for="item in data.one">
+                <template v-for="item in product_list">
                     <a v-bind:href="item.image_url">
                         <div class="box">
                             <div class="img">
-                                <img v-bind:src="item.image" class="lazy">
+                                <img v-bind:src="'/public/img/xm_website/' + item.image" class="lazy">
                             </div>
                             <div class="infor">
                                 <div class="ui-box">
@@ -47,7 +47,7 @@
     </div>
     <script src="/static/js/libs/jquery.min.js?v1.11.3"></script>
     <script src="/static/js/libs/vue.min.js?v1.0.26"></script>
-    <script src="../../public/js/xm_website/recommend.min.js?v=4579972"></script>
+    <script src="../../public/js/xm_website/recommend.min.js?v=54b4a39"></script>
 </body>
 
 </html>

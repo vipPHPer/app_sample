@@ -21,8 +21,8 @@
         <div id="J_category" class="page-category">
             <div class="section section-header">
                 <div class="left">
-                    <a href="http://www.baicu.com">
-                        <img data-src="img/icon_back_n.png?v=30ed918">
+                    <a href="javascript:void(0);">
+                        <img src="/public/img/xm_website/icon_back_n.png">
                     </a>
                 </div>
                 <div class="middle">
@@ -33,10 +33,10 @@
                 <div id="m1" class="list-wrap">
                     <h3 class="title-h3">手机 / 电话卡</h3>
                     <ul class="list-category">
-                        <template v-for="item in data.one">
+                        <template v-for="item in parts1">
                             <li class="items-li">
                                 <a v-bind:href="item.image_url" class="img">
-                                    <img v-bind:src="item.image" class="lazy">
+                                    <img v-bind:src="'/public/img/xm_website/' + item.image" class="lazy">
                                 </a>
                                 <a v-bind:href="item.image_url">
                                     <p v-text="item.title" class="name"></p>
@@ -48,10 +48,10 @@
                 <div id="m2" class="list-wrap">
                     <h3 class="title-h3">笔记本 / 平板</h3>
                     <ul class="list-category">
-                        <template v-for="item in data.two">
+                        <template v-for="item in parts2">
                             <li class="items-li">
                                 <a v-bind:href="item.image_url" class="img">
-                                    <img v-bind:src="item.image" class="lazy">
+                                    <img v-bind:src="'/public/img/xm_website/' + item.image" class="lazy">
                                 </a>
                                 <a v-bind:href="item.image_url">
                                     <p v-text="item.title" class="name"></p>
@@ -63,10 +63,10 @@
                 <div id="m3" class="list-wrap">
                     <h3 class="title-h3">电视 / 盒子</h3>
                     <ul class="list-category">
-                        <template v-for="item in data.three">
+                        <template v-for="item in parts3">
                             <li class="items-li">
                                 <a v-bind:href="item.image_url" class="img">
-                                    <img v-bind:src="item.image" class="lazy">
+                                    <img v-bind:src="'/public/img/xm_website/' + item.image" class="lazy">
                                 </a>
                                 <a v-bind:href="item.image_url">
                                     <p v-text="item.title" class="name"></p>
@@ -78,10 +78,10 @@
                 <div id="m4" class="list-wrap">
                     <h3 class="title-h3">智能硬件 / 路由器</h3>
                     <ul class="list-category">
-                        <template v-for="item in data.four">
+                        <template v-for="item in parts4">
                             <li class="items-li">
                                 <a v-bind:href="item.image_url" class="img">
-                                    <img v-bind:src="item.image" class="lazy">
+                                    <img v-bind:src="'/public/img/xm_website/' + item.image" class="lazy">
                                 </a>
                                 <a v-bind:href="item.image_url">
                                     <p v-text="item.title" class="name"></p>
@@ -93,10 +93,10 @@
                 <div id="m5" class="list-wrap">
                     <h3 class="title-h3">移动电源 / 插线板 / 电池</h3>
                     <ul class="list-category">
-                        <template v-for="item in data.five">
+                        <template v-for="item in parts5">
                             <li class="items-li">
                                 <a v-bind:href="item.image_url" class="img">
-                                    <img v-bind:src="item.image" class="lazy">
+                                    <img v-bind:src="'/public/img/xm_website/' + item.image" class="lazy">
                                 </a>
                                 <a v-bind:href="item.image_url">
                                     <p v-text="item.title" class="name"></p>
@@ -108,10 +108,10 @@
                 <div id="m6" class="list-wrap">
                     <h3 class="title-h3">耳机 / 音箱 / 存储卡</h3>
                     <ul class="list-category">
-                        <template v-for="item in data.six">
+                        <template v-for="item in parts6">
                             <li class="items-li">
                                 <a v-bind:href="item.image_url" class="img">
-                                    <img v-bind:src="item.image" class="lazy">
+                                    <img v-bind:src="'/public/img/xm_website/' + item.image" class="lazy">
                                 </a>
                                 <a v-bind:href="item.image_url">
                                     <p v-text="item.title" class="name"></p>
@@ -123,10 +123,10 @@
                 <div id="m7" class="list-wrap">
                     <h3 class="title-h3">小米生活方式</h3>
                     <ul class="list-category">
-                        <template v-for="item in data.seven">
+                        <template v-for="item in parts7">
                             <li class="items-li">
                                 <a v-bind:href="item.image_url" class="img">
-                                    <img v-bind:src="item.image" class="lazy">
+                                    <img v-bind:src="'/public/img/xm_website/' + item.image" class="lazy">
                                 </a>
                                 <a v-bind:href="item.image_url">
                                     <p v-text="item.title" class="name"></p>
@@ -138,10 +138,10 @@
                 <div id="m8" class="list-wrap">
                     <h3 class="title-h3">保护类配件</h3>
                     <ul class="list-category">
-                        <template v-for="item in data.eight">
+                        <template v-for="item in parts8">
                             <li class="items-li">
                                 <a v-bind:href="item.image_url" class="img">
-                                    <img v-bind:src="item.image" class="lazy">
+                                    <img v-bind:src="'/public/img/xm_website/' + item.image" class="lazy">
                                 </a>
                                 <a v-bind:href="item.image_url">
                                     <p v-text="item.title" class="name"></p>
@@ -153,10 +153,10 @@
                 <div id="m9" class="list-wrap">
                     <h3 class="title-h3">优惠套装</h3>
                     <ul class="list-category">
-                        <template v-for="item in data.nine">
+                        <template v-for="item in parts9">
                             <li class="items-li">
                                 <a v-bind:href="item.image_url" class="img">
-                                    <img v-bind:src="item.image" class="lazy">
+                                    <img v-bind:src="'/public/img/xm_website/' + item.image" class="lazy">
                                 </a>
                                 <a v-bind:href="item.image_url">
                                     <p v-text="item.title" class="name"></p>
@@ -206,7 +206,7 @@
     </div>
     <script src="/static/js/libs/jquery.min.js?v1.11.3"></script>
     <script src="/static/js/libs/vue.min.js?v1.0.26"></script>
-    <script src="../../public/js/xm_website/category.min.js?v=4d698f3"></script>
+    <script src="../../public/js/xm_website/category.min.js?v=494925e"></script>
 </body>
 
 </html>

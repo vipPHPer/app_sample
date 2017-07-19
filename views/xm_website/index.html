@@ -12,13 +12,12 @@
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="pragma" content="no-cache">
     <title>小米商城</title>
-    <link rel="stylesheet" href="/static/scss/libs/swiper.min.css">
     <link rel="stylesheet" href="../../public/css/xm_website/style.min.css?v=13ee6ea">
     <script src="/static/js/_modules/common.js"></script>
 </head>
 
 <body>
-    <div id="app" class="viewport">
+    <div id="app" class="viewport" v-cloak>
         <div id="J_home" data-log="首页" class="page-index">
             <div class="section section-header">
                 <div class="search-bar">
@@ -31,13 +30,11 @@
             </div>
             <div id="J_slider" class="section section-slider">
                 <ul id="J_slider-img" class="slider-wrap">
-                    <template v-for="item in data.slider">
-                        <li class="slider-img">
-                            <a v-bind:href="item.image">
-                                <img v-bind:src="item.image" class="lazy">
-                            </a>
-                        </li>
-                    </template>
+                    <li class="slider-img" v-for="todo in banner">
+                        <a href="javascript:void(0);">
+                            <img v-bind:src="'/public/img/xm_website/' + todo.image" class="lazy">
+                        </a>
+                    </li>
                 </ul>
                 <div id="btnBox" class="slider-page">
                     <span class="current">1</span>
@@ -49,11 +46,11 @@
                 <div class="container">
                     <div class="mcells-auto-fill">
                         <div id="J_phoneInfor" data-index="0" class="body">
-                            <template v-for="item in data.one">
+                            <template v-for="todo in parts1">
                                 <div>
                                     <a href="javascript:void(0);">
-                                        <div :class="item.sale_sign == 'phone' ? 'items-1' : ''" class="items">
-                                            <img v-bind:src="item.image" class="lazy">
+                                        <div :class="todo.sale_sign == 'phone' ? 'items-1' : ''" class="items">
+                                            <img v-bind:src="'/public/img/xm_website/' + todo.image" class="lazy">
                                         </div>
                                     </a>
                                 </div>
@@ -62,20 +59,20 @@
                     </div>
                 </div>
                 <div id="J_productList" class="container">
-                    <template v-for="item in data.two">
+                    <template v-for="todo in parts2">
                         <div class="container">
                             <div class="list J_linksign-customize">
                                 <div class="items">
                                     <div class="img">
-                                        <a v-bind:href="item.image_url">
-                                            <img v-bind:src="item.image" class="lazy icon">
+                                        <a href="javascript:void(0);">
+                                            <img v-bind:src="'/public/img/xm_website/' + todo.image" class="lazy icon">
                                         </a>
                                     </div>
                                     <div class="infor">
                                         <a href="javascript:void(0);">
-                                            <p v-text="item.title" class="name"></p>
-                                            <p v-text="item.brief" class="brief"></p>
-                                            <p v-text="item.price" class="price"></p>
+                                            <p v-html="todo.title" class="name"></p>
+                                            <p v-html="todo.brief" class="brief"></p>
+                                            <p v-html="todo.price" class="price"></p>
                                         </a>
                                     </div>
                                 </div>
@@ -86,11 +83,11 @@
                 <div class="container">
                     <div class="mcells-auto-fill">
                         <div id="J_mobileCard" data-index="64" class="body mobile-card">
-                            <template v-for="item in data.three">
+                            <template v-for="todo in parts3">
                                 <div>
-                                    <a v-bind:href="item.image_url">
+                                    <a href="javascript:void(0);">
                                         <div class="items J_linksign-customize">
-                                            <img v-bind:src="item.image" class="lazy">
+                                            <img v-bind:src="'/public/img/xm_website/' + todo.image" class="lazy">
                                         </div>
                                     </a>
                                 </div>
@@ -139,8 +136,7 @@
     </div>
     <script src="/static/js/libs/jquery.min.js?v1.11.3"></script>
     <script src="/static/js/libs/vue.min.js?v1.0.26"></script>
-    <script src="/static/js/libs/swiper.min.js?v3.4.1"></script>
-    <script src="../../public/js/xm_website/script.min.js?v=69643cf"></script>
+    <script src="../../public/js/xm_website/script.min.js?v=605ba66"></script>
 
 </body>
 
