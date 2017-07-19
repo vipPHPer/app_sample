@@ -24,7 +24,12 @@ _common.sendAjax(apiUrl, 'json', function(data) {
       el: '#app',
       data: {
         banner: solt_data.banner,
-        product_list_01: solt_data.product_list_01
+        product_list_01: solt_data.product_list_01,
+        product_list_02: solt_data.product_list_02,
+        product_list_03: solt_data.product_list_03,
+        product_list_04: solt_data.product_list_04,
+        product_list_05: solt_data.product_list_05,
+        product_list_06: solt_data.product_list_06
       }
     });
   }

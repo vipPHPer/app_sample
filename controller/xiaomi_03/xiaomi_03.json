@@ -4,42 +4,274 @@
   "data": {
     "banner": [{
       "title": "小米六一儿童节",
-      "img": "/public/img/xiaomi_03/b1-b467f6a647.jpg",
-      "img_url": "/public/img/xiaomi_03/b1-b467f6a647.jpg",
+      "img": "b1-b467f6a647.jpg",
+      "img_url": "b1-b467f6a647.jpg",
       "is_active": true
     }, {
       "title": "小米六一儿童节",
-      "img": "/public/img/xiaomi_03/b2-df0f276cf6.jpg",
-      "img_url": "/public/img/xiaomi_03/b2-df0f276cf6.jpg",
+      "img": "b2-df0f276cf6.jpg",
+      "img_url": "b2-df0f276cf6.jpg",
       "is_active": ""
     }],
     "product_list_01": [{
       "title": "小米手机5",
       "desc": "每天早上10点现货",
-      "img": "/public/img/xiaomi_03/p1-1.jpg",
-      "img_url": "/public/img/xiaomi_03/p1-1.jpg",
+      "img": "p1-1.jpg",
+      "img_url": "p1-1.jpg",
       "price": "1999",
       "is_qi": true
     }, {
       "title": "小米Max 「3GB＋32GB」",
       "desc": "两天现货：5.27/5.31",
-      "img": "/public/img/xiaomi_03/p1-2.jpg",
-      "img_url": "/public/img/xiaomi_03/p1-2.jpg",
+      "img": "p1-2.jpg",
+      "img_url": "p1-2.jpg",
       "price": "1499",
       "is_qi": false
     }, {
       "title": "红米手机 3",
       "desc": "天天现货：5.26 - 6.1",
-      "img": "/public/img/xiaomi_03/p1-3.jpg",
-      "img_url": "/public/img/xiaomi_03/p1-3.jpg",
+      "img": "p1-3.jpg",
+      "img_url": "p1-3.jpg",
       "price": "899",
       "is_qi": false
     }, {
       "title": "红米Note 3",
       "desc": "天天现货：5.26 - 6.1",
-      "img": "/public/img/xiaomi_03/p1-4.jpg",
-      "img_url": "/public/img/xiaomi_03/p1-4.jpg",
+      "img": "p1-4.jpg",
+      "img_url": "p1-4.jpg",
       "price": "899",
+      "is_qi": false
+    }],
+    "product_list_02": [{
+      "title": "小米电视3S 43英寸",
+      "desc": "让童年的记忆，更加清晰",
+      "img": "p2-1.jpg",
+      "img_url": "p2-1.jpg",
+      "price": "1799",
+      "is_qi": false
+    }, {
+      "title": "小米家庭音响 金属版",
+      "desc": "用今天的音响，听听小时候的声音",
+      "img": "p2-2.jpg",
+      "img_url": "p2-2.jpg",
+      "price": "899",
+      "is_qi": false
+    }, {
+      "title": "米路由器 mini",
+      "desc": "只要网速快，时时回味小时候",
+      "img": "p2-3.jpg",
+      "img_url": "p2-3.jpg",
+      "price": "129",
+      "is_qi": false
+    }, {
+      "title": "小米蓝牙手柄",
+      "desc": "红白机的游戏如今可以这样玩",
+      "img": "p2-4.jpg",
+      "img_url": "p2-4.jpg",
+      "price": "99",
+      "is_qi": false
+    }],
+    "product_list_03": [{
+      "title": "九号平衡车",
+      "desc": "用好奇的心看看这个世界",
+      "img": "p3-1.jpg",
+      "img_url": "p3-1.jpg",
+      "price": "1999",
+      "is_qi": false
+    }, {
+      "title": "小米手环",
+      "desc": "寻找童年的每一步都应该被记录",
+      "img": "p3-2.jpg",
+      "img_url": "p3-2.jpg",
+      "price": "99",
+      "is_qi": false
+    }, {
+      "title": "小蚁运动相机",
+      "desc": "换一个视角，也许会有新发现",
+      "img": "p3-3.jpg",
+      "img_url": "p3-3.jpg",
+      "price": "399",
+      "is_qi": false
+    }, {
+      "title": "米兔电话儿童手表",
+      "desc": "和小孩随时随地在一起",
+      "img": "p3-4.jpg",
+      "img_url": "p3-4.jpg",
+      "price": "299",
+      "is_qi": false
+    }],
+    "product_list_04": [{
+      "title": "米家写字灯",
+      "desc": "书桌旁的灯光，如此温暖",
+      "img": "p4-1.jpg",
+      "img_url": "p4-1.jpg",
+      "price": "169",
+      "is_qi": false
+    }, {
+      "title": "小米随身蓝牙音箱",
+      "desc": "重新听小时候的歌，会有新的感受",
+      "img": "p4-2.jpg",
+      "img_url": "p4-2.jpg",
+      "price": "69",
+      "is_qi": false
+    }, {
+      "title": "小米圈铁耳机",
+      "desc": "现在的耳机，比以前更美好了",
+      "img": "p4-3.jpg",
+      "img_url": "p4-3.jpg",
+      "price": "99",
+      "is_qi": false
+    }, {
+      "title": "20000mAh移动电源",
+      "desc": "小时候的梦想，也需要充电",
+      "img": "p4-4.jpg",
+      "img_url": "p4-4.jpg",
+      "price": "149",
+      "is_qi": false
+    }],
+    "product_list_05": [{
+      "title": "魔方",
+      "desc": "随心控制智能设备",
+      "img": "p5-1.jpg",
+      "img_url": "p5-1.jpg",
+      "price": "69",
+      "is_qi": false
+    }, {
+      "title": "Yeelight智能灯泡 彩光版",
+      "desc": "1600万种色彩的灯泡",
+      "img": "p5-2.jpg",
+      "img_url": "p5-2.jpg",
+      "price": "99",
+      "is_qi": false
+    }, {
+      "title": "小米小钢炮蓝牙音箱2",
+      "desc": "声声动听的桌上艺术品",
+      "img": "p5-3.jpg",
+      "img_url": "p5-3.jpg",
+      "price": "129",
+      "is_qi": false
+    }, {
+      "title": "悟空米兔",
+      "desc": "米兔新玩具，夏日来袭",
+      "img": "p5-4.jpg",
+      "img_url": "p5-4.jpg",
+      "price": "49",
+      "is_qi": false
+    }, {
+      "title": "飞行员米兔屏幕擦挂饰",
+      "desc": "可爱造型，一起在天空翱翔",
+      "img": "p5-5.jpg",
+      "img_url": "p5-5.jpg",
+      "price": "29",
+      "is_qi": false
+    }],
+    "product_list_06": [{
+      "title": "清凉能量套装",
+      "desc": "静音实用可收纳的小风扇套餐",
+      "img": "p6-1.jpg",
+      "img_url": "p6-1.jpg",
+      "price": "163.9",
+      "price_plus": "168.9",
+      "is_text": "",
+      "is_qi": false
+    }, {
+      "title": "照明能量套装",
+      "desc": "能调节亮度的小巧随身灯套餐",
+      "img": "p6-2.jpg",
+      "img_url": "p6-2.jpg",
+      "price": "163.9",
+      "price_plus": "168.9",
+      "is_text": "",
+      "is_qi": false
+    }, {
+      "title": "大白兔奶糖",
+      "desc": "小时候的好滋味",
+      "img": "p6-3.jpg",
+      "img_url": "p6-3.jpg",
+      "price": "",
+      "price_plus": "",
+      "is_text": "回忆无价",
+      "is_qi": false
+    }, {
+      "title": "小米体重秤",
+      "desc": "喝杯水都可感知的精准",
+      "img": "p6-4.jpg",
+      "img_url": "p6-4.jpg",
+      "price": "99",
+      "price_plus": "",
+      "is_text": "",
+      "is_qi": true
+    }, {
+      "title": "小米空气净化器2",
+      "desc": "10分钟，房间空气焕然一新",
+      "img": "p6-5.jpg",
+      "img_url": "p6-5.jpg",
+      "price": "699",
+      "price_plus": "",
+      "is_text": "",
+      "is_qi": true
+    }, {
+      "title": "小蚁智能摄像机 夜视版",
+      "desc": "能看能听能说，手机远程观看",
+      "img": "p6-6.jpg",
+      "img_url": "p6-6.jpg",
+      "price": "149",
+      "price_plus": "",
+      "is_text": "",
+      "is_qi": true
+    }, {
+      "title": "Yeelight床头灯",
+      "desc": "给卧室1600万种颜色",
+      "img": "p6-7.jpg",
+      "img_url": "p6-7.jpg",
+      "price": "249",
+      "price_plus": "",
+      "is_text": "",
+      "is_qi": true
+    }, {
+      "title": "小米智能插线板",
+      "desc": "远程控制家电，还很漂亮",
+      "img": "p6-8.jpg",
+      "img_url": "p6-8.jpg",
+      "price": "69",
+      "price_plus": "",
+      "is_text": "",
+      "is_qi": true
+    }, {
+      "title": "小米活塞耳机 基础版",
+      "desc": "新鲜绽放，五色可选",
+      "img": "p6-9.jpg",
+      "img_url": "p6-9.jpg",
+      "price": "29",
+      "price_plus": "",
+      "is_text": "",
+      "is_qi": true
+    }, {
+      "title": "钻石糖",
+      "desc": "是不是满满的回忆？",
+      "img": "p6-10.jpg",
+      "img_url": "p6-10.jpg",
+      "price": "",
+      "price_plus": "",
+      "is_text": "回忆无价",
+      "is_qi": false
+    }, {
+      "title": "学院风简约双肩包",
+      "desc": "经典百搭颜色 一件包邮",
+      "img": "p6-11.jpg",
+      "img_url": "p6-11.jpg",
+      "price": "49",
+      "price_plus": "59",
+      "is_text": "",
+      "is_qi": false
+    }, {
+      "title": "小米极简都市双肩包",
+      "desc": "方形立体设计 4重存储空间",
+      "img": "p6-12.jpg",
+      "img_url": "p6-12.jpg",
+      "price": "129",
+      "price_plus": "149",
+      "is_text": "",
       "is_qi": false
     }]
   }

@@ -255,6 +255,9 @@ ul {
         p {
             font-size: .2rem;
             line-height: .4rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
         .price {
             font-size: .3rem;
