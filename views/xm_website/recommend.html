@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0, minimal-ui">
+    <meta name="imagemode" content="force">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="pragma" content="no-cache">
+    <title>小米商城</title>
+    <link rel="stylesheet" href="../../public/css/xm_website/recommend.min.css?v=4c5aa91">
+    <script src="/static/js/_modules/common.js"></script>
+</head>
+
+<body>
+    <div id="app" class="viewport">
+        <div class="page-recommend">
+            <div id="j_recommendList" class="section section-list">
+                <template v-for="item in data.one">
+                    <a v-bind:href="item.image_url">
+                        <div class="box">
+                            <div class="img">
+                                <img v-bind:src="item.image" class="lazy">
+                            </div>
+                            <div class="infor">
+                                <div class="ui-box">
+                                    <div class="ui-box-flex name">
+                                        <p v-text="item.title"></p>
+                                    </div>
+                                    <div class="ui-box-flex price">
+                                        <p v-text="item.price"></p>
+                                    </div>
+                                </div>
+                                <div class="ui-brief">
+                                    <p v-text="item.brief"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </template>
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/libs/jquery.min.js?v1.11.3"></script>
+    <script src="/static/js/libs/vue.min.js?v1.0.26"></script>
+    <script src="../../public/js/xm_website/recommend.min.js?v=4579972"></script>
+</body>
+
+</html>
