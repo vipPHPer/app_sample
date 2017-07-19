@@ -6,6 +6,10 @@
 
 @import '../../../static/scss/_mobile_normalize.scss';
 $imgUrl: '/public/img/xiaomi_04/';
+[v-cloak] {
+    display: none;
+}
+
 //Your style Here
 html,
 body {
@@ -48,44 +52,44 @@ ul {
 @-webkit-keyframes ani-left {
     0% {
         -webkit-transform: translate3d(-9.44rem, 13.8rem, 0);
-        transform: translate3d(-9.44rem, 13.8rem, 0)
+        transform: translate3d(-9.44rem, 13.8rem, 0);
     }
     100% {
-        -webkit-transform: translate3d(-3.2rem, -1.96rem, 0);
-        transform: translate3d(-3.2rem, -1.96rem, 0)
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
 }
 
 @keyframes ani-left {
     0% {
         -webkit-transform: translate3d(-9.44rem, 13.8rem, 0);
-        transform: translate3d(-9.44rem, 13.8rem, 0)
+        transform: translate3d(-9.44rem, 13.8rem, 0);
     }
     100% {
-        -webkit-transform: translate3d(-3.2rem, -1.96rem, 0);
-        transform: translate3d(-3.2rem, -1.96rem, 0)
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
     }
 }
 
 @-webkit-keyframes ani-right {
     0% {
         -webkit-transform: translate3d(6rem, -13.8rem, 0);
-        transform: translate3d(6rem, -13.8rem, 0)
+        transform: translate3d(6rem, -13.8rem, 0);
     }
     100% {
         -webkit-transform: translateZ(0);
-        transform: translateZ(0)
+        transform: translateZ(0);
     }
 }
 
 @keyframes ani-right {
     0% {
         -webkit-transform: translate3d(6rem, -13.8rem, 0);
-        transform: translate3d(6rem, -13.8rem, 0)
+        transform: translate3d(6rem, -13.8rem, 0);
     }
     100% {
         -webkit-transform: translateZ(0);
-        transform: translateZ(0)
+        transform: translateZ(0);
     }
 }
 
@@ -197,14 +201,14 @@ ul {
         width: 9.44rem;
         top: 0;
         left: 0;
-        // -webkit-animation: ani-left 2.5s ease-out forwards;
-        // animation: ani-left 2.5s ease-out forwards;
+        -webkit-animation: ani-left 2.5s ease-out forwards;
+        animation: ani-left 2.5s ease-out forwards;
     }
     .ani-right {
         right: 0;
         bottom: 0;
-        // -webkit-animation: ani-right 2.5s ease-out forwards;
-        // animation: ani-right 2.5s ease-out forwards;
+        -webkit-animation: ani-right 2.5s ease-out forwards;
+        animation: ani-right 2.5s ease-out forwards;
     }
     .logo {
         @include abs;

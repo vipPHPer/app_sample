@@ -12,17 +12,17 @@
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="pragma" content="no-cache">
     <title>小米商城</title>
-    <link rel="stylesheet" href="../../public/css/xiaomi_04/style.min.css?v=e4c4cfe">
+    <link rel="stylesheet" href="../../public/css/xiaomi_04/style.min.css?v=1d9d247">
     <script src="/static/js/_modules/common.js"></script>
 </head>
 
 <body>
-    <div id="app" class="viewport">
+    <div id="app" class="viewport" v-cloak>
         <div class="section section1">
-            <img src="/public/img/xiaomi_04/ani-left.png?v=b168cd9" class="ani-left">
-            <img src="/public/img/xiaomi_04/ani-right.png?v=2afc47d" class="ani-right">
-            <img src="/public/img/xiaomi_04/logo.png?v=84837ad" class="logo">
-            <img src="/public/img/xiaomi_04/section1.png?v=97f823a" class="tit-img">
+            <img src="/public/img/xiaomi_04/ani-left.png" class="ani-left">
+            <img src="/public/img/xiaomi_04/ani-right.png" class="ani-right">
+            <img src="/public/img/xiaomi_04/logo.png" class="logo">
+            <img src="/public/img/xiaomi_04/section1.png" class="tit-img">
             <div class="link">
                 <a href="javascript:void(0);" class="rule">活动规则</a>
                 <span class="sep">|</span>
@@ -32,7 +32,7 @@
         <div class="section section2">
             <p class="info">春天来了，万象更新，一切又是一幅生机勃勃的样子<br />新的一年、新的学期、新的生活、新的开始、新的朋友...<br />小米换新季，给你新惊喜</p>
             <div class="topic-area">
-                <img src="/public/img/xiaomi_04/poster.jpg?v=3d20b70" class="lazy poster">
+                <img src="/public/img/xiaomi_04/poster.jpg" class="lazy poster">
                 <p class="title">多款新品3月3日0点开售</p>
                 <p class="desc">参与互动分享，还能抢先赢新品购买资格</p>
                 <a class="btn">了解更多</a>
@@ -61,15 +61,15 @@
             </div>
         </div>
         <div class="section section4 clearfix">
-            <template v-for="item in data.phone">
-                <a v-bind:href="item.image" target="_blank" class="items">
-                    <img v-bind:src="item.image" class="lazy">
-                    <p v-text="item.title" class="title main"></p>
-                    <p v-text="item.brief" class="desc main"></p>
+            <template v-for="todo in phone">
+                <a href="javascript:void(0);" class="items">
+                    <img v-bind:src="'/public/img/xiaomi_04/' + todo.image" class="lazy" alt="{{todo.title}}">
+                    <p v-html="todo.title" class="title main"></p>
+                    <p v-html="todo.brief" class="desc main"></p>
                     <p class="price-box">
                         <span class="type">￥</span>
-                        <span v-text="item.price" class="price"></span>
-                        <span v-text="item.base" class="base"></span>
+                        <span v-html="todo.price" class="price"></span>
+                        <span v-if="todo.base" class="base">起</span>
                     </p>
                 </a>
             </template>
@@ -79,7 +79,7 @@
             <p class="desc">作为学霸的你，需要的不仅是一台轻盈高性能的笔记本<br />一盏好台灯帮助你保持专注的同时，还能保护你的眼睛<br />而一支好笔，更能帮你找回书写的快乐</p>
             <div class="product-area">
                 <div class="draw-price-area">
-                    <img src="/public/img/xiaomi_04/draw-price-area-bg.jpg?v=e9dd2b7" class="lazy">
+                    <img src="/public/img/xiaomi_04/draw-price-area-bg.jpg" class="lazy">
                     <h3 class="pro-tit">学习工作必备套装</h3>
                     <p class="pro-desc">米家LED台灯+小米插线板6位+米家签字笔</p>
                     <p class="price-area">
@@ -95,34 +95,34 @@
                         <a href="javascript:void(0);" class="btn share-btn">分享领券</a>
                         <a href="javascript:void(0);" class="btn btn-buy">立即购买</a>
                     </div>
-                    <template v-for="item in data.mibook">
-                        <a v-bind:href="item.image" target="_blank" class="product-box">
-                            <img v-bind:src="item.image" class="lazy">
-                            <p v-text="item.brief" class="pro-desc"></p>
-                            <h3 v-text="item.title" class="pro-title"></h3>
+                    <template v-for="todo in mibook">
+                        <a href="javascript:void(0);" class="product-box">
+                            <img v-bind:src="'/public/img/xiaomi_04/' + todo.image" class="lazy" alt="{{todo.title}}">
+                            <p v-html="todo.brief" class="pro-desc"></p>
+                            <h3 v-html="todo.title" class="pro-title"></h3>
                             <p class="price-box">
                                 <span class="type">￥</span>
-                                <span v-text="item.price" class="price"></span>
+                                <span v-html="todo.price" class="price"></span>
                             </p>
                         </a>
                     </template>
                 </div>
                 <div class="row-2item-box clearfix">
-                    <template v-for="item in data.parts1">
-                        <a v-bind:href="item.image" target="_blank" class="items">
-                            <img v-bind:src="item.image" class="lazy">
-                            <p v-text="item.title" class="title main"></p>
-                            <p v-text="item.brief" class="desc main"></p>
+                    <template v-for="item in parts1">
+                        <a href="javascript:void(0);" class="items">
+                            <img v-bind:src="'/public/img/xiaomi_04/' + item.image" class="lazy" alt="{{item.title}}">
+                            <p v-html="item.title" class="title main"></p>
+                            <p v-html="item.brief" class="desc main"></p>
                             <p class="price-box">
                                 <span class="type">￥</span>
-                                <span v-text="item.price" class="price"></span>
+                                <span v-html="item.price" class="price"></span>
                             </p>
                         </a>
                     </template>
                 </div>
                 <p class="desc">你有没有过<br />赶上课、赶地铁时，总恨不得多长两条腿？<br />这些尴尬不用怕，新装备助你出行酷人一步！</p>
                 <div class="draw-price-area">
-                    <img src="/public/img/xiaomi_04/suit2.jpg?v=479b420" class="lazy">
+                    <img src="/public/img/xiaomi_04/suit2.jpg" class="lazy">
                     <p class="pro-tit">出行必备套装</p>
                     <p class="pro-desc">小米自拍杆（线控版）+移动电源10000mAh高配版+胶囊耳机</p>
                     <p class="price-area">
@@ -138,14 +138,14 @@
                         <a href="javascript:void(0);" class="btn share-btn">分享领券</a>
                         <a href="javascript:void(0);" class="btn btn-buy">立即购买</a>
                     </div>
-                    <template v-for="item in data.bike">
-                        <a v-bind:href="item.image" target="_blank" class="product-box">
-                            <img v-bind:src="item.image" class="lazy">
-                            <p v-text="item.brief" class="pro-desc"></p>
-                            <h3 v-text="item.title" class="pro-title"></h3>
+                    <template v-for="item in bike">
+                        <a href="javascript:void(0);" class="product-box">
+                            <img v-bind:src="'/public/img/xiaomi_04/' + item.image" class="lazy" alt="{{item.title}}">
+                            <p v-html="item.brief" class="pro-desc"></p>
+                            <h3 v-html="item.title" class="pro-title"></h3>
                             <p class="price-box">
                                 <span class="type">￥</span>
-                                <span v-text="item.price" class="price"></span>
+                                <span v-html="item.price" class="price"></span>
                             </p>
                         </a>
                     </template>
@@ -157,7 +157,7 @@
             <p class="desc">过年胖、过劳胖，喝口凉水都会胖<br />你是不是又给自己定下了新一年的健身计划？<br />你需要的不只是决心，这些好物也能帮到你</p>
             <div class="product-area">
                 <div class="draw-price-area">
-                    <img src="/public/img/xiaomi_04/suit3.jpg?v=f588acb" class="lazy">
+                    <img src="/public/img/xiaomi_04/suit3.jpg" class="lazy">
                     <h3 class="pro-tit">男神女神运动套装</h3>
                     <p class="pro-desc">经典连帽休闲卫衣+多功能都市休闲胸包+圈铁耳机</p>
                     <p class="price-area">
@@ -173,14 +173,14 @@
                         <a href="javascript:void(0);" class="btn share-btn">分享领券</a>
                         <a href="javascript:void(0);" class="btn btn-buy">立即购买</a>
                     </div>
-                    <template v-for="item in data.parts2">
-                        <a v-bind:href="item.image" target="_blank" class="product-box">
-                            <img v-bind:src="item.image" class="lazy">
-                            <p v-text="item.brief" class="pro-desc"></p>
-                            <h3 v-text="item.title" class="pro-title"></h3>
+                    <template v-for="item in parts2">
+                        <a href="javascript:void(0);" class="product-box">
+                            <img v-bind:src="'/public/img/xiaomi_04/' + item.image" class="lazy" alt="{{item.title}}">
+                            <p v-html="item.brief" class="pro-desc"></p>
+                            <h3 v-html="item.title" class="pro-title"></h3>
                             <p class="price-box">
                                 <span class="type">￥</span>
-                                <span v-text="item.price" class="price"></span>
+                                <span v-html="item.price" class="price"></span>
                             </p>
                         </a>
                     </template>
@@ -191,26 +191,26 @@
             <p class="title">更智能的家居，给生活新感受</p>
             <p class="desc">看电视、吃饭、喝水乃至呼吸空气<br />小米智能家居可以改变你生活的方方面面<br />让家变的更智能，给生活一些新感受</p>
             <div class="product-area">
-                <template v-for="item in data.mitv">
-                    <a v-bind:href="item.image" target="_blank" class="product-box">
-                        <img v-bind:src="item.image" class="lazy">
-                        <p v-text="item.brief" class="pro-desc"></p>
-                        <h3 v-text="item.title" class="pro-title"></h3>
+                <template v-for="item in mitv">
+                    <a href="javascript:void(0);" class="product-box">
+                        <img v-bind:src="'/public/img/xiaomi_04/' + item.image" class="lazy" alt="{{item.title}}">
+                        <p v-html="item.brief" class="pro-desc"></p>
+                        <h3 v-html="item.title" class="pro-title"></h3>
                         <p class="price-box">
                             <span class="type">￥</span>
-                            <span v-text="item.price" class="price"></span>
+                            <span v-html="item.price" class="price"></span>
                         </p>
                     </a>
                 </template>
                 <div class="row-2item-box clearfix">
-                    <template v-for="item in data.parts3">
-                        <a v-bind:href="item.image" target="_blank" class="items">
-                            <img v-bind:src="item.image" class="lazy">
-                            <p v-text="item.title" class="title main"></p>
-                            <p v-text="item.brief" class="desc main"></p>
+                    <template v-for="item in parts3">
+                        <a href="javascript:void(0);" class="items">
+                            <img v-bind:src="'/public/img/xiaomi_04/' + item.image" class="lazy" alt="{{item.title}}">
+                            <p v-html="item.title" class="title main"></p>
+                            <p v-html="item.brief" class="desc main"></p>
                             <p class="price-box">
                                 <span class="type">￥</span>
-                                <span v-text="item.price" class="price"></span>
+                                <span v-html="item.price" class="price"></span>
                             </p>
                         </a>
                     </template>
@@ -220,14 +220,14 @@
                 <p class="title">更多精选，为生活增添新色彩</p>
                 <div class="product-area">
                     <div class="row-2item-box clearfix">
-                        <template v-for="item in data.parts4">
-                            <a v-bind:href="item.image" target="_blank" class="items">
-                                <img v-bind:src="item.image" class="lazy">
-                                <p v-text="item.title" class="title main"></p>
-                                <p v-text="item.brief" class="desc main"></p>
+                        <template v-for="item in parts4">
+                            <a href="javascript:void(0);" class="items">
+                                <img v-bind:src="'/public/img/xiaomi_04/' + item.image" class="lazy" alt="{{item.title}}">
+                                <p v-html="item.title" class="title main"></p>
+                                <p v-html="item.brief" class="desc main"></p>
                                 <p class="price-box">
                                     <span class="type">￥</span>
-                                    <span v-text="item.price" class="price"></span>
+                                    <span v-html="item.price" class="price"></span>
                                 </p>
                             </a>
                         </template>
@@ -235,7 +235,7 @@
                 </div>
             </div>
         </div>
-        <img src="/public/img/xiaomi_04/footer.jpg?v=f33c1aa" class="lazy">
+        <img src="/public/img/xiaomi_04/footer.jpg" class="lazy">
     </div>
     <script src="/static/js/libs/jquery.min.js?v1.11.3"></script>
     <script src="/static/js/libs/vue.min.js?v1.0.26"></script>

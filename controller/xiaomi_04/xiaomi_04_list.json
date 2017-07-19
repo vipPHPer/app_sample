@@ -1,0 +1,205 @@
+{
+  "code": 0,
+  "msg": "success",
+  "data": {
+    "phone": [{
+      "title": "红米Note4 全网通64GB版",
+      "brief": "全金属十核千元旗舰",
+      "image": "cms-items-1.jpg",
+      "price": "1199",
+      "base": false
+    }, {
+      "title": "小米手机5 全网通高配版",
+      "brief": "拍照不虚，画质更清晰",
+      "image": "cms-items-2.jpg",
+      "price": "1799",
+      "base": false
+    }, {
+      "title": "小米手机5s 全网通版",
+      "brief": "“暗夜之眼”超感光相机",
+      "image": "cms-items-3.jpg",
+      "price": "1999",
+      "base": true
+    }, {
+      "title": "小米手机5s Plus 全网通版",
+      "brief": "5.7\"大屏双摄手机，拍照黑科技",
+      "image": "cms-items-4.jpg",
+      "price": "2299",
+      "base": true
+    }],
+    "mibook": [{
+      "title": "小米笔记本Air 13.3英寸",
+      "brief": "配备独立显卡的它，不仅能让你高效工作，还能运行 一些大型游戏，办公、娱乐都搞定！",
+      "image": "notebook.jpg",
+      "price": "4999",
+      "base": false
+    }, {
+      "title": "小米笔记本Air 12.5英寸",
+      "brief": "颜值当道的今天，相信它已经撩动了你的内心，再加上 更轻更快更清晰...你，还在等什么？",
+      "image": "notebook2.jpg",
+      "price": "3499",
+      "base": false
+    }],
+    "parts1": [{
+      "title": "米家 LED 智能台灯",
+      "brief": "无可视频闪，长久耐用",
+      "image": "cms-items-5.jpg",
+      "price": "169",
+      "base": false
+    }, {
+      "title": "小米头戴式耳机 轻松版",
+      "brief": "封闭式音腔，佩戴舒适，手机直推",
+      "image": "cms-items-6.jpg",
+      "price": "199",
+      "base": false
+    }, {
+      "title": "小米多功能都市休闲胸包",
+      "brief": "时尚便捷，结实耐用",
+      "image": "cms-items-7.jpg",
+      "price": "69",
+      "base": false
+    }, {
+      "title": "米家签字笔",
+      "brief": "舒适握感，书写丝滑流畅",
+      "image": "cms-items-8.jpg",
+      "price": "14.9"
+    }],
+    "bike": [{
+      "title": "九号平衡车",
+      "brief": "3分钟就能上手，迷你便携设计让你上学上班时轻松 带在身边，不怕迟到不怕丢。",
+      "image": "balance-car.jpg",
+      "price": "1999",
+      "base": false
+    }, {
+      "title": "米家骑记电助力折叠自行车",
+      "brief": "轻盈精致，折叠后占用空间小。拉风的它，可以让 你的城市出行变得轻松有趣。",
+      "image": "bike.jpg",
+      "price": "1999",
+      "base": false
+    }],
+    "parts2": [{
+      "title": "小米手环2",
+      "brief": "不只是计步，还能提醒你的跑步配速及最高心率，更有 久坐提醒功能，让健身更科学有效",
+      "image": "bracelet.jpg",
+      "price": "149",
+      "base": false
+    }, {
+      "title": "小米体重秤",
+      "brief": "精美的外观就像是一件艺术品，高精度测量，还能 通过APP记录你的体重变化",
+      "image": "balance.jpg",
+      "price": "99",
+      "base": false
+    }],
+    "mitv": [{
+      "title": "小米电视3s 65英寸 影院版",
+      "brief": "画质升级的大屏幕，配合360°环绕立体声影院，把客厅 变成家中的电影院、音乐厅，给你更强的听视觉体验。",
+      "image": "tv1.jpg",
+      "price": "6699",
+      "base": false
+    }, {
+      "title": "小米空气净化器2",
+      "brief": "高效净化空气中的浮尘、甲醛及异味，让房间空气焕然一新， 即使是在家中吃火锅，也不用担心味道难以消散。",
+      "image": "air-cleaner.jpg",
+      "price": "699",
+      "base": false
+    }],
+    "parts3": [{
+      "title": "小米电视3s 55英寸",
+      "brief": "人工智能电视，4K大屏新旗舰",
+      "image": "cms-items-9.jpg",
+      "price": "3999",
+      "base": false
+    }, {
+      "title": "小米电视3s 65\"曲面",
+      "brief": "3月3日-8日，下单立减200元",
+      "image": "cms-items-10.jpg",
+      "price": "8999",
+      "base": false
+    }, {
+      "title": "米家IH电饭煲",
+      "brief": "多才多艺的智能电饭煲",
+      "image": "cms-items-11.jpg",
+      "price": "999",
+      "base": false
+    }, {
+      "title": "小米净水器（厨下式）",
+      "brief": "大流量直出纯净水，健康家庭必备",
+      "image": "cms-items-12.jpg",
+      "price": "1999",
+      "base": false
+    }],
+    "parts4": [{
+      "title": "小米电视3s 55英寸",
+      "brief": "人工智能电视，4K大屏新旗舰",
+      "image": "cms-items-9.jpg",
+      "price": "3999",
+      "base": false
+    }, {
+      "title": "小米电视3s 65\"曲面",
+      "brief": "3月3日-8日，下单立减200元",
+      "image": "cms-items-10.jpg",
+      "price": "8999",
+      "base": false
+    }, {
+      "title": "米家IH电饭煲",
+      "brief": "多才多艺的智能电饭煲",
+      "image": "cms-items-11.jpg",
+      "price": "399",
+      "base": false
+    }, {
+      "title": "小米净水器（厨下式）",
+      "brief": "大流量直出纯净水，健康家庭必备",
+      "image": "cms-items-12.jpg",
+      "price": "1999",
+      "base": false
+    }, {
+      "title": "小米电视3s 55英寸",
+      "brief": "人工智能电视，4K大屏新旗舰",
+      "image": "cms-items-9.jpg",
+      "price": "3999",
+      "base": false
+    }, {
+      "title": "小米电视3s 65\"曲面",
+      "brief": "3月3日-8日，下单立减200元",
+      "image": "cms-items-10.jpg",
+      "price": "8999",
+      "base": false
+    }, {
+      "title": "米家IH电饭煲",
+      "brief": "多才多艺的智能电饭煲",
+      "image": "cms-items-11.jpg",
+      "price": "399",
+      "base": false
+    }, {
+      "title": "小米净水器（厨下式）",
+      "brief": "大流量直出纯净水，健康家庭必备",
+      "image": "cms-items-12.jpg",
+      "price": "1999",
+      "base": false
+    }, {
+      "title": "小米电视3s 65\"曲面",
+      "brief": "3月3日-8日，下单立减200元",
+      "image": "cms-items-10.jpg",
+      "price": "8999",
+      "base": false
+    }, {
+      "title": "小米净水器（厨下式）",
+      "brief": "大流量直出纯净水，健康家庭必备",
+      "image": "cms-items-12.jpg",
+      "price": "1999",
+      "base": false
+    }, {
+      "title": "小米电视3s 55英寸",
+      "brief": "人工智能电视，4K大屏新旗舰",
+      "image": "cms-items-9.jpg",
+      "price": "3999",
+      "base": false
+    }, {
+      "title": "米家IH电饭煲",
+      "brief": "多才多艺的智能电饭煲",
+      "image": "cms-items-11.jpg",
+      "price": "399",
+      "base": false
+    }]
+  }
+}

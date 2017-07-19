@@ -3,21 +3,37 @@
  * @date    2017-03-02 12:40:09
  */
 
-// function lazyload() {
-//   var $app = $('#app');
-//   var $sections = $('.section', $app);
+var apiUrl = '/controller/xiaomi_04/xiaomi_04_list.json';
+var _common = {
+  //ajax请求
+  sendAjax: function(url, dataType, callback) {
+    $.ajax({
+      url: url,
+      dataType: dataType,
+      success: callback
+    });
+  }
+};
 
-//   $sections.visibleWatcher({
-//     onVisible: function($elm, index) {
-//       $sections.filter(function(i) {
-//         return i <= index + 1;
-//       }).addClass('proload').find('img').each(function() {
-//         var _src = $(this).attr('data-src');
-//         $(this).attr('src', _src);
-//       });
-//     }
-//   });
-// }
+_common.sendAjax(apiUrl, 'json', function(data) {
+  if (data && data.code === 0) {
+    console.log(data.data);
+    window.solt_data = data.data;
+    window.vm = new Vue({
+      el: '#app',
+      data: {
+        phone: solt_data.phone,
+        mibook: solt_data.mibook,
+        bike: solt_data.bike,
+        mitv: solt_data.mitv,
+        parts1: solt_data.parts1,
+        parts2: solt_data.parts2,
+        parts3: solt_data.parts3,
+        parts4: solt_data.parts4
+      }
+    });
+  }
+});
 
 // function getData() {
 //   var dataUrl = '../xiaomi_04/js/xmData.json';
