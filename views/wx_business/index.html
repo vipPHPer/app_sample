@@ -12,12 +12,12 @@
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="pragma" content="no-cache">
     <title>品信互动 - 微商城</title>
-    <link rel="stylesheet" href="../../public/css/wx_business/style.min.css?v=5ac2c0e">
+    <link rel="stylesheet" href="../../public/css/wx_business/style.min.css?v=3cc3797">
     <script src="/static/js/_modules/common.js"></script>
 </head>
 
 <body>
-    <div id="app" class="viewport">
+    <div id="app" class="viewport" v-cloak>
         <div class="section section-header">
             <div class="container">
                 <div class="logo">
@@ -37,8 +37,7 @@
         </div>
         <div class="section section-banner">
             <div class="text">
-                <span class="desc-1">“移动互联网平台开发与运营商”</span>
-                <span class="desc-2">新媒体整合营销策划机构</span>
+                <span v-for="(index, todo) in banner_desc" class="desc-{{index + 1}}">{{todo.brief}}</span>
             </div>
         </div>
         <div class="section section-container">
@@ -89,7 +88,7 @@
     </div>
     <script src="/static/js/libs/jquery.min.js?v1.11.3"></script>
     <script src="/static/js/libs/vue.min.js?v1.0.26"></script>
-    <script src="../../public/js/wx_business/script.min.js?v=cf8427e"></script>
+    <script src="../../public/js/wx_business/script.min.js?v=b3b0409"></script>
 </body>
 
 </html>

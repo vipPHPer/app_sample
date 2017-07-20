@@ -6,6 +6,10 @@
 
 @import '../../../static/scss/_mobile_normalize.scss';
 $imgUrl: '/public/img/wx_business/';
+[v-cloak] {
+    display: none;
+}
+
 //Your style Here
 html,
 body {
@@ -131,7 +135,7 @@ ul {
     background-size: 100% 100%;
     .text {
         color: #fff;
-        font-size: .4rem;
+        font-size: .38rem;
         text-align: center;
         padding-top: .56rem;
     }
