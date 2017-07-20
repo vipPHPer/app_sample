@@ -3,24 +3,28 @@
  * @date    2017-02-23 10:18:22
  */
 
+var apiUrl = '/controller/wx_business/planDistribution.json';
+var _common = {
+  //ajax请求
+  sendAjax: function(url, dataType, callback) {
+    $.ajax({
+      url: url,
+      dataType: dataType,
+      succes: callback
+    });
+  }
+};
 
-
-function lazyload() {
-  var $planDistribution = $('#J_planDistribution');
-  var $sections = $('.section', $planDistribution);
-
-  $sections.visibleWatcher({
-    onVisible: function($elm, index) {
-      $sections.filter(function(i) {
-        return i <= index + 1;
-      }).addClass('preload').find('img').each(function() {
-        var _src = $(this).attr('data-src');
-        $(this).attr('src', _src);
-      });
-    }
-  });
-}
-
-$(document).ready(function() {
-  lazyload();
+_common.sendAjax(apiUrl, 'json', function(data) {
+  if (data && data.code === 0) {
+    console.log(data.data);
+    window.solt_data = data.data;
+    // window.vm = new Vue({
+    //   el: '#app',
+    //   data: {
+    //     plan_list: solt_data.plan,
+    //     content_list: solt_data.contents
+    //   }
+    // });
+  }
 });
