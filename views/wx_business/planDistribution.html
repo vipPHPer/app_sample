@@ -17,22 +17,16 @@
 </head>
 
 <body>
-    <div id="app" class="viewport">
+    <div id="app" class="viewport" v-cloak>
         <div class="section section-banner"></div>
-        <div v-for="(index, todo) in plan_list" class="section section-plan{{index + 1}}">
-            <img v-bind:src="'/public/img/wx_business/' + todo.img_url" alt="{{todo.title}}">
+        <div v-for="(index, todo) in plan_list" class="section section-plan{{index + 1}}" id="{{todo.id}}">
+            <img v-bind:src="'/public/img/wx_business/' + todo.img_url" alt="{{todo.id}}">
         </div>
         <div class="section section-container">
             <div class="container">
                 <ul class="flex">
-                    <li class="flex-1">
-                        <img src="/public/img/wx_business/planTradition_icon04.jpg?v=d79fda5">
-                    </li>
-                    <li class="flex-1">
-                        <img src="/public/img/wx_business/planTradition_icon05.jpg?v=24f3677">
-                    </li>
-                    <li class="flex-1">
-                        <img src="/public/img/wx_business/planTradition_icon06.jpg?v=6b8b784">
+                    <li class="flex-1" v-for="todo in content_list" id="{{todo.id}}">
+                        <img v-bind:src="'/public/img/wx_business/' + todo.img_url" alt="{{todo.id}}">
                     </li>
                 </ul>
             </div>
@@ -42,7 +36,7 @@
     </div>
     <script src="/static/js/libs/jquery.min.js?v1.11.3"></script>
     <script src="/static/js/libs/vue.min.js?v1.0.26"></script>
-    <script src="../../public/js/wx_business/planDistribution.min.js?v=b35e4e3"></script>
+    <script src="../../public/js/wx_business/planDistribution.min.js?v=8671670"></script>
 </body>
 
 </html>

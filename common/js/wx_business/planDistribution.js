@@ -10,7 +10,7 @@ var _common = {
     $.ajax({
       url: url,
       dataType: dataType,
-      succes: callback
+      success: callback
     });
   }
 };
@@ -19,12 +19,14 @@ _common.sendAjax(apiUrl, 'json', function(data) {
   if (data && data.code === 0) {
     console.log(data.data);
     window.solt_data = data.data;
-    // window.vm = new Vue({
-    //   el: '#app',
-    //   data: {
-    //     plan_list: solt_data.plan,
-    //     content_list: solt_data.contents
-    //   }
-    // });
+    window.vm = new Vue({
+      el: '#app',
+      data: {
+        plan_list: solt_data.plan,
+        content_list: solt_data.contents
+      }
+    });
+  } else {
+    alert(JSON.stringify(data.data));
   }
 });
