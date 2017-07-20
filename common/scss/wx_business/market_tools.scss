@@ -1,0 +1,183 @@
+/**
+ * @authors chenfuxin (since1991_vip@163.com)
+ * @date    2017-02-20 09:13:25
+ */
+
+@import '../../../static/scss/_mobile_normalize.scss';
+$imgUrl: '/public/img/wx_business/';
+//Your style Here
+html,
+body {
+    height: 100%;
+    font-size: .2rem;
+    background: #eee;
+}
+
+body {
+    font-family: "Microsoft Yahei";
+}
+
+h1,
+h2,
+h3,
+ul,
+li,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+@mixin pos {
+    position: relative;
+}
+
+@mixin abs {
+    position: absolute;
+}
+
+@mixin transition($arr) {
+    -webkit-transition: $arr;
+    -moz-transition: $arr;
+    -ms-transition: $arr;
+    -o-transition: $arr;
+    transition: $arr;
+}
+
+@mixin transform($arr) {
+    -webkit-transform: $arr;
+    -moz-transform: $arr;
+    -ms-transform: $arr;
+    -o-transform: $arr;
+    transform: $arr;
+}
+
+.container {
+    margin: 0 .2rem;
+}
+
+.section {
+    @include pos;
+    background: #eee;
+}
+
+.viewport {
+    width: 100%;
+    max-width: 7.2rem;
+    margin: 0 auto;
+    .lazy {
+        width: 100%;
+    }
+}
+
+.section-banner {
+    width: 100%;
+    height: 3rem;
+    &.preload {
+        background: url('../img/marketing_banner_icon.jpg') no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.section-container {
+    padding-top: .2rem;
+    .items {
+        @include pos;
+        background: #fff;
+        margin-bottom: .2rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .fl-img {
+        width: 3.85rem;
+        height: 2.9rem;
+        img {
+            width: 3.85rem;
+            height: 2.9rem;
+        }
+    }
+    .fr-text {
+        text-align: center;
+        img {
+            width: 1.88rem;
+            height: 1.86rem;
+            padding-top: .15rem;
+            padding-bottom: .3rem;
+        }
+        p {
+            font-size: .34rem;
+            color: #363635;
+        }
+    }
+}
+
+.section-wrap1 {
+    padding-top: .3rem;
+    ul {
+        margin-bottom: .2rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        li {
+            width: 2.13rem;
+            height: 2.14rem;
+            margin-left: .16rem;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+        a {
+            display: block;
+            img {
+                width: 2.13rem;
+                height: 2.14rem;
+            }
+        }
+    }
+}
+
+.section-wrap2 {
+    padding-top: .2rem;
+    ul {
+        border-bottom: 1px solid #d3d1d1;
+        &:last-child {
+            border: 0;
+        }
+        li {
+            text-align: center;
+            padding: .35rem 0;
+            border-left: 1px solid #d3d1d1;
+            &:first-child {
+                border: 0;
+            }
+        }
+        a {
+            display: block;
+            font-size: .26rem;
+            color: #363635;
+        }
+    }
+}
+
+.section-copyright {
+    background: #eee;
+    height: .76rem;
+    line-height: .76rem;
+    text-align: center;
+    font-size: .28rem;
+    color: #ababab;
+}
+
+.return-index {
+    display: block;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    background: #027a9b;
+    color: #fff;
+    font-size: .3rem;
+}

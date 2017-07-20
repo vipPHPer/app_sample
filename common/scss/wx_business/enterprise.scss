@@ -1,0 +1,206 @@
+/**
+ * @authors chenfuxin (since1991_vip@163.com)
+ * @date    2017-02-21 14:42:16
+ */
+
+@import '../../../static/scss/_mobile_normalize.scss';
+$imgUrl: '/public/img/wx_business/';
+//Your style Here
+html,
+body {
+    height: 100%;
+    font-size: .2rem;
+    background: #eee;
+}
+
+body {
+    font-family: "Microsoft Yahei";
+}
+
+h1,
+h2,
+h3,
+ul,
+li,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+@mixin pos {
+    position: relative;
+}
+
+@mixin abs {
+    position: absolute;
+}
+
+@mixin transition($arr) {
+    -webkit-transition: $arr;
+    -moz-transition: $arr;
+    -ms-transition: $arr;
+    -o-transition: $arr;
+    transition: $arr;
+}
+
+@mixin transform($arr) {
+    -webkit-transform: $arr;
+    -moz-transform: $arr;
+    -ms-transform: $arr;
+    -o-transform: $arr;
+    transform: $arr;
+}
+
+.container {
+    margin: 0 .2rem;
+}
+
+.section {
+    @include pos;
+    background: #eee;
+}
+
+.viewport {
+    width: 100%;
+    max-width: 7.2rem;
+    margin: 0 auto;
+    .lazy {
+        width: 100%;
+    }
+}
+
+.section-banner {
+    width: 100%;
+    height: 3rem;
+    &.preload {
+        background: url('../img/enterprise_banner_icon.jpg') no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.main-title {
+    width: 100%;
+    height: .54rem;
+    line-height: .54rem;
+    font-size: .34rem;
+    color: #fff;
+    margin-bottom: .2rem;
+    padding-left: .2rem;
+    border: 1px solid #d3d1d1;
+    background: #88c545;
+}
+
+.section-wrap1 {
+    padding-top: .2rem;
+    .container {
+        width: 6.82rem;
+        height: 5.02rem;
+        overflow: hidden;
+    }
+    &.preload {
+        .container {
+            background: url('../img/enterprise_icon03.png') no-repeat center center;
+            background-size: 100% 100%;
+        }
+    }
+}
+
+.section-wrap2 {
+    padding-top: .2rem;
+    .container {
+        overflow: hidden;
+    }
+    .title {
+        @extend .main-title;
+    }
+    .text {
+        padding: 0 .1rem;
+        p {
+            font-size: .28rem;
+            color: #ababab;
+            line-height: .45rem;
+        }
+        img {
+            margin-top: .2rem;
+            width: 6.63rem;
+            height: 3.47rem;
+            text-align: center;
+        }
+    }
+}
+
+.section-wrap3 {
+    padding-top: .2rem;
+    .container {
+        width: 6.83rem;
+        height: 7.94rem;
+        overflow: hidden;
+    }
+    &.preload {
+        .container {
+            background: url('../img/enterprise_icon02.png') no-repeat center center;
+            background-size: 100% 100%;
+        }
+    }
+}
+
+.section-wrap4 {
+    padding-top: .2rem;
+    .container {
+        width: 6.81rem;
+        height: 6.94rem;
+        overflow: hidden;
+    }
+    &.preload {
+        .container {
+            background: url('../img/enterprise_icon04.png') no-repeat center center;
+            background-size: 100% 100%;
+        }
+    }
+}
+
+.section-wrap5 {
+    padding-top: .2rem;
+    ul {
+        border-bottom: 1px solid #d3d1d1;
+        &:last-child {
+            border: 0;
+        }
+        li {
+            text-align: center;
+            padding: .35rem 0;
+            border-left: 1px solid #d3d1d1;
+            &:first-child {
+                border: 0;
+            }
+        }
+        a {
+            display: block;
+            font-size: .26rem;
+            color: #363635;
+        }
+    }
+}
+
+.section-copyright {
+    background: #eee;
+    height: .76rem;
+    line-height: .76rem;
+    text-align: center;
+    font-size: .28rem;
+    color: #ababab;
+}
+
+.return-index {
+    display: block;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    background: #027a9b;
+    color: #fff;
+    font-size: .3rem;
+}

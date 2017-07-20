@@ -1,0 +1,190 @@
+/**
+ * @authors chenfuxin (since1991_vip@163.com)
+ * @date    2017-02-16 10:00:55
+ */
+
+@import '../../../static/scss/_mobile_normalize.scss';
+$imgUrl: '/public/img/wx_business/';
+//Your style Here
+html,
+body {
+    height: 100%;
+    font-size: .2rem;
+    background: #eee;
+}
+
+body {
+    font-family: "Microsoft Yahei";
+}
+
+h1,
+h2,
+h3,
+ul,
+li,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+@mixin pos {
+    position: relative;
+}
+
+@mixin abs {
+    position: absolute;
+}
+
+@mixin transition($arr) {
+    -webkit-transition: $arr;
+    -moz-transition: $arr;
+    -ms-transition: $arr;
+    -o-transition: $arr;
+    transition: $arr;
+}
+
+@mixin transform($arr) {
+    -webkit-transform: $arr;
+    -moz-transform: $arr;
+    -ms-transform: $arr;
+    -o-transform: $arr;
+    transform: $arr;
+}
+
+.container {
+    margin: 0 .2rem;
+}
+
+.section {
+    @include pos;
+}
+
+.viewport {
+    width: 100%;
+    max-width: 7.2rem;
+    margin: 0 auto;
+    .lazy {
+        width: 100%;
+    }
+}
+
+.section-header {
+    background: #fff;
+    height: .98rem;
+    line-height: .98rem;
+    text-align: center;
+    border: 1px solid #d3d1d1;
+    .header {
+        height: 100%;
+        div {
+            border-left: 1px solid #d3d1d1;
+            &:first-child {
+                border: 0;
+            }
+            a {
+                display: block;
+                height: 100%;
+                font-size: .32rem;
+                color: #363635;
+            }
+            &.current {
+                a {
+                    color: #88c545;
+                }
+            }
+        }
+    }
+}
+
+.section-banner {
+    width: 100%;
+    height: 3rem;
+    overflow: hidden;
+    a {
+        display: block;
+    }
+    img {
+        width: 100%;
+        height: 3rem;
+    }
+}
+
+.section-service {
+    background: #eee;
+    .content {
+        padding-top: .22rem;
+    }
+    .service-title {
+        width: 100%;
+        height: .54rem;
+        line-height: .54rem;
+        background: #88c545;
+        color: #fff;
+        font-size: .3rem;
+        padding-left: .3rem;
+    }
+    .service-content {
+        margin: 0 .2rem;
+        background: #fff;
+        img {
+            width: 5.97rem;
+            height: 10.31rem;
+            padding-left: .415rem;
+            padding-top: .52rem;
+            padding-bottom: .52rem;
+        }
+    }
+}
+
+.section-advantage {
+    background: #eee;
+    .content {
+        // padding-top: .22rem;
+    }
+    .advantage-title {
+        width: 100%;
+        height: .54rem;
+        line-height: .54rem;
+        background: #88c545;
+        color: #fff;
+        font-size: .3rem;
+        padding-left: .3rem;
+    }
+    .advantage-text {
+        font-size: .28rem;
+        line-height: .4rem;
+        color: #ababab;
+        margin: 0 .2rem;
+        background: #fff;
+        padding-top: .32rem;
+        padding-bottom: .25rem;
+        p {
+            text-indent: 2em;
+            margin: 0 .2rem;
+            margin-bottom: .2rem
+        }
+    }
+}
+
+.section-copyright {
+    background: #eee;
+    height: .76rem;
+    line-height: .76rem;
+    text-align: center;
+    font-size: .28rem;
+    color: #ababab;
+}
+
+.return-index {
+    display: block;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    background: #027a9b;
+    color: #fff;
+    font-size: .3rem;
+}

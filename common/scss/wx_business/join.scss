@@ -1,0 +1,211 @@
+/**
+ * @authors chenfuxin (since1991_vip@163.com)
+ * @date    2017-02-16 11:19:45
+ */
+
+@import '../../../static/scss/_mobile_normalize.scss';
+$imgUrl: '/public/img/wx_business/';
+//Your style Here
+html,
+body {
+    height: 100%;
+    font-size: .2rem;
+    background: #eee;
+}
+
+body {
+    font-family: "Microsoft Yahei";
+}
+
+h1,
+h2,
+h3,
+ul,
+li,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+@mixin pos {
+    position: relative;
+}
+
+@mixin abs {
+    position: absolute;
+}
+
+@mixin transition($arr) {
+    -webkit-transition: $arr;
+    -moz-transition: $arr;
+    -ms-transition: $arr;
+    -o-transition: $arr;
+    transition: $arr;
+}
+
+@mixin transform($arr) {
+    -webkit-transform: $arr;
+    -moz-transform: $arr;
+    -ms-transform: $arr;
+    -o-transform: $arr;
+    transform: $arr;
+}
+
+.container {
+    margin: 0 .2rem;
+}
+
+.section {
+    @include pos;
+}
+
+.viewport {
+    width: 100%;
+    max-width: 7.2rem;
+    margin: 0 auto;
+    .lazy {
+        width: 100%;
+    }
+}
+
+.section-banner {
+    width: 100%;
+    height: 3rem;
+    a {
+        display: block;
+    }
+    img {
+        width: 100%;
+        height: 3rem;
+    }
+}
+
+.section-container {
+    background: #eee;
+    padding-top: .2rem;
+    padding-bottom: .3rem;
+    ul {
+        margin-bottom: .14rem;
+        .box {
+            padding: .25rem .18rem;
+        }
+        li {
+            background: #fff;
+            text-align: center;
+            margin: 0 .07rem;
+        }
+        .img {
+            width: 1.6rem;
+            height: 1.6rem;
+            margin: 0 auto;
+            img {
+                width: 1.6rem;
+                height: 1.6rem;
+            }
+        }
+        .title {
+            font-size: .34rem;
+            line-height: .45rem;
+            color: #363635;
+            margin-top: .2rem;
+            margin-bottom: .1rem;
+        }
+        .desc {
+            font-size: .28rem;
+            line-height: .45rem;
+            color: #ababab;
+        }
+    }
+}
+
+.section-agent {
+    background: #eee;
+    .container {
+        background: #fff;
+    }
+    h2 {
+        text-align: center;
+        color: #fff;
+        height: .8rem;
+        line-height: .8rem;
+        font-size: .36rem;
+        background: #88c545;
+        font-weight: normal;
+    }
+    .input-text {
+        margin-top: .2rem;
+        padding-bottom: .35rem;
+    }
+    .items {
+        margin: 0 .16rem;
+        font-size: .28rem;
+        color: #363535;
+    }
+    table {
+        margin: 0 .2rem;
+        tr {
+            font-size: .28rem;
+            color: #363535;
+            td {
+                font-size: .28rem;
+                &:first-child {
+                    text-align: right;
+                    width: 2rem;
+                }
+            }
+            input {
+                width: 3rem + 1rem + .5rem;
+                height: .6rem;
+                border: 1px solid #d1d3d3;
+                border-radius: 0;
+                padding: .1rem;
+                -webkit-appearance: none;
+            }
+        }
+    }
+    .btn-box {
+        margin-top: .3rem;
+        text-align: center;
+        a {
+            display: inline-block;
+            width: 1.6rem;
+            height: .7rem;
+            line-height: .7rem;
+            text-align: center;
+            color: #ababab;
+            font-size: .32rem;
+            background: #eee;
+            &.submit {
+                color: #fff;
+                background: #88c545;
+                margin-left: .3rem;
+            }
+            &.cancel {
+                margin-left: .2rem;
+            }
+        }
+    }
+}
+
+.section-copyright {
+    background: #eee;
+    height: .76rem;
+    line-height: .76rem;
+    text-align: center;
+    font-size: .28rem;
+    color: #ababab;
+}
+
+.return-index {
+    display: block;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    background: #027a9b;
+    color: #fff;
+    font-size: .3rem;
+}

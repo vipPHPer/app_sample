@@ -1,0 +1,244 @@
+/**
+ * @authors chenfuxin (since1991_vip@163.com)
+ * @date    2017-02-22 15:25:20
+ */
+
+@import '../../../static/scss/_mobile_normalize.scss';
+$imgUrl: '/public/img/wx_business/';
+//Your style Here
+html,
+body {
+    height: 100%;
+    font-size: .2rem;
+    background: #eee;
+}
+
+body {
+    font-family: "Microsoft Yahei";
+}
+
+h1,
+h2,
+h3,
+ul,
+li,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+@mixin pos {
+    position: relative;
+}
+
+@mixin abs {
+    position: absolute;
+}
+
+@mixin transition($arr) {
+    -webkit-transition: $arr;
+    -moz-transition: $arr;
+    -ms-transition: $arr;
+    -o-transition: $arr;
+    transition: $arr;
+}
+
+@mixin transform($arr) {
+    -webkit-transform: $arr;
+    -moz-transform: $arr;
+    -ms-transform: $arr;
+    -o-transform: $arr;
+    transform: $arr;
+}
+
+.container {
+    margin: 0 .2rem;
+}
+
+.section {
+    @include pos;
+    background: #eee;
+}
+
+.viewport {
+    width: 100%;
+    max-width: 7.2rem;
+    margin: 0 auto;
+    .lazy {
+        width: 100%;
+    }
+}
+
+.section-banner {
+    width: 100%;
+    height: 3rem;
+    &.preload {
+        background: url('../img/pay_banner_icon.jpg') no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.section-wrap1 {
+    padding-top: .2rem;
+    .container {
+        border: 1px solid #d3d1d1;
+        background: #fff;
+        overflow: hidden;
+    }
+    .title {
+        line-height: .54rem;
+        line-height: .54rem;
+        padding-left: .1rem;
+        color: #fff;
+        font-size: .34rem;
+        background: #88c545;
+        border-bottom: 1px solid #d3d1d1;
+    }
+    .text {
+        padding: .15rem .1rem;
+        text-align: center;
+        p {
+            font-size: .28rem;
+            line-height: .45rem;
+            color: #ababab;
+            text-align: left;
+        }
+        img {
+            width: 6.55rem;
+            height: 1.98rem;
+        }
+    }
+}
+
+.section-wrap2 {
+    padding-top: .2rem;
+    .items {
+        margin-bottom: .2rem;
+        .icon {
+            display: inline-block;
+            width: .3rem;
+            height: .3rem;
+            background: url('../img/pay_icon10.png') no-repeat;
+            background-size: 100% 100%;
+        }
+        .text {
+            border: 1px solid #d3d1d1;
+            background: #fff;
+            text-align: center;
+        }
+        .text-box {
+            padding: .2rem;
+        }
+        .name {
+            font-size: .34rem;
+            color: #363635;
+            text-align: left;
+        }
+        p {
+            font-size: .28rem;
+            color: #ababab;
+            line-height: .45rem;
+            text-align: left;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+        img {
+            margin-top: .2rem;
+        }
+    }
+    .items-1 {
+        img {
+            width: 5.38rem;
+            height: 2.31rem;
+        }
+    }
+    .items-2 {
+        img {
+            width: 4.99rem;
+            height: 2.64rem;
+        }
+    }
+    .items-3 {
+        img {
+            width: 2.38rem;
+            height: .87rem;
+        }
+    }
+    .items-4 {
+        img {
+            width: 3.76rem;
+            height: 3.96rem;
+        }
+    }
+    .items-6 {
+        img {
+            width: 5.73rem;
+            height: 1.78rem;
+        }
+    }
+    .items-7 {
+        img {
+            width: 3.48rem;
+            height: 2.72rem;
+        }
+    }
+    .items-8 {
+        img {
+            width: 3.14rem;
+            height: 2.96rem;
+        }
+    }
+    .items-9 {
+        img {
+            width: 3.36rem;
+            height: 3.76rem;
+        }
+    }
+}
+
+.section-wrap3 {
+    padding-top: .2rem;
+    ul {
+        border-bottom: 1px solid #d3d1d1;
+        &:last-child {
+            border: 0;
+        }
+        li {
+            text-align: center;
+            padding: .35rem 0;
+            border-left: 1px solid #d3d1d1;
+            &:first-child {
+                border: 0;
+            }
+        }
+        a {
+            display: block;
+            font-size: .26rem;
+            color: #363635;
+        }
+    }
+}
+
+.section-copyright {
+    background: #eee;
+    height: .76rem;
+    line-height: .76rem;
+    text-align: center;
+    font-size: .28rem;
+    color: #ababab;
+}
+
+.return-index {
+    display: block;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    background: #027a9b;
+    color: #fff;
+    font-size: .3rem;
+}

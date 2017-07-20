@@ -1,0 +1,163 @@
+/**
+ * @authors chenfuxin (since1991_vip@163.com)
+ * @date    2017-02-16 17:19:24
+ */
+
+@import '../../../static/scss/_mobile_normalize.scss';
+$imgUrl: '/public/img/wx_business/';
+//Your style Here
+html,
+body {
+    height: 100%;
+    font-size: .2rem;
+    background: #eee;
+}
+
+body {
+    font-family: "Microsoft Yahei";
+}
+
+h1,
+h2,
+h3,
+ul,
+li,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+@mixin pos {
+    position: relative;
+}
+
+@mixin abs {
+    position: absolute;
+}
+
+@mixin transition($arr) {
+    -webkit-transition: $arr;
+    -moz-transition: $arr;
+    -ms-transition: $arr;
+    -o-transition: $arr;
+    transition: $arr;
+}
+
+@mixin transform($arr) {
+    -webkit-transform: $arr;
+    -moz-transform: $arr;
+    -ms-transform: $arr;
+    -o-transform: $arr;
+    transform: $arr;
+}
+
+.container {
+    margin: 0 .2rem;
+}
+
+.section {
+    @include pos;
+}
+
+.viewport {
+    width: 100%;
+    max-width: 7.2rem;
+    margin: 0 auto;
+    .lazy {
+        width: 100%;
+    }
+}
+
+.section-banner {
+    height: 3.61rem;
+    a {
+        display: block;
+        img {
+            width: 100%;
+            height: 3.61rem;
+        }
+    }
+}
+
+.section-container {
+    background: #eee;
+    .container {
+        padding-top: .2rem;
+    }
+    .case-box1 {
+        a {
+            display: block;
+            width: 2.92rem;
+            height: 3.16rem;
+            img {
+                width: 2.92rem;
+                height: 3.16rem;
+            }
+        }
+        .case-top,
+        .case-bottom {
+            width: 3.79rem;
+            a {
+                display: block;
+                height: 1.53rem;
+            }
+            img {
+                width: 3.79rem;
+                height: 1.53rem;
+            }
+        }
+        .case-bottom {
+            margin-top: .1rem;
+        }
+    }
+    .case-box2 {
+        margin-top: .09rem;
+        a {
+            display: block;
+            width: 2.92rem;
+            height: 3.16rem;
+            img {
+                width: 2.92rem;
+                height: 3.16rem;
+            }
+        }
+        .case-top,
+        .case-bottom {
+            width: 3.79rem;
+            a {
+                display: block;
+                height: 1.53rem;
+            }
+            img {
+                width: 3.79rem;
+                height: 1.53rem;
+            }
+        }
+        .case-bottom {
+            margin-top: .1rem;
+        }
+    }
+}
+
+.section-copyright {
+    background: #eee;
+    height: .76rem;
+    line-height: .76rem;
+    text-align: center;
+    font-size: .28rem;
+    color: #ababab;
+}
+
+.return-index {
+    display: block;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    background: #027a9b;
+    color: #fff;
+    font-size: .3rem;
+}

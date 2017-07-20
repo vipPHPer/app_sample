@@ -1,0 +1,248 @@
+/**
+ * @authors chenfuxin (since1991_vip@163.com)
+ * @date    2017-02-20 10:51:36
+ */
+
+@import '../../../static/scss/_mobile_normalize.scss';
+$imgUrl: '/public/img/wx_business/';
+//Your style Here
+html,
+body {
+    height: 100%;
+    font-size: .2rem;
+    background: #eee;
+}
+
+body {
+    font-family: "Microsoft Yahei";
+}
+
+h1,
+h2,
+h3,
+ul,
+li,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+@mixin pos {
+    position: relative;
+}
+
+@mixin abs {
+    position: absolute;
+}
+
+@mixin transition($arr) {
+    -webkit-transition: $arr;
+    -moz-transition: $arr;
+    -ms-transition: $arr;
+    -o-transition: $arr;
+    transition: $arr;
+}
+
+@mixin transform($arr) {
+    -webkit-transform: $arr;
+    -moz-transform: $arr;
+    -ms-transform: $arr;
+    -o-transform: $arr;
+    transform: $arr;
+}
+
+.container {
+    margin: 0 .2rem;
+}
+
+.section {
+    @include pos;
+    background: #eee;
+}
+
+.viewport {
+    width: 100%;
+    max-width: 7.2rem;
+    margin: 0 auto;
+    .lazy {
+        width: 100%;
+    }
+}
+
+.section-banner {
+    width: 100%;
+    height: 3rem;
+    &.preload {
+        background: url('../img/cloud_banner_icon.jpg') no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.main-container {
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #d3d1d1;
+}
+
+.main-text {
+    padding: .2rem;
+    .title {
+        font-size: .34rem;
+        color: #363635;
+    }
+    p {
+        font-size: .28rem;
+        color: #ababab;
+        line-height: .45rem;
+        text-indent: 1.5em;
+    }
+}
+
+.section-wrap1 {
+    padding-top: .2rem;
+    .container {
+        @extend .main-container;
+    }
+    .title-img {
+        width: 100%;
+        height: 3.45rem;
+        img {
+            width: 100%;
+            height: 3.45rem;
+        }
+    }
+    .text {
+        @extend .main-text;
+    }
+}
+
+.section-wrap2 {
+    padding-top: .2rem;
+    .container {
+        @extend .main-container;
+    }
+    .title-img {
+        width: 100%;
+        height: 3.31rem;
+        text-align: center;
+        margin-top: .1rem;
+        img {
+            width: 4.77rem;
+            height: 3.31rem;
+        }
+    }
+    .text {
+        @extend .main-text;
+    }
+}
+
+.sectino-wrap3 {
+    padding-top: .2rem;
+    .container {
+        @extend .main-container;
+    }
+    .title-img {
+        width: 100%;
+        height: 3.5rem;
+        text-align: center;
+        margin-top: .1rem;
+        img {
+            width: 4.21rem;
+            height: 3.5rem;
+        }
+    }
+    .text {
+        @extend .main-text;
+    }
+}
+
+.section-wrap4 {
+    padding-top: .2rem;
+    .container {
+        @extend .main-container;
+    }
+    .title-img {
+        width: 100%;
+        height: 3.36rem;
+        text-align: center;
+        // margin-top: .1rem;
+        img {
+            width: 100%;
+            height: 3.36rem;
+        }
+    }
+    .text {
+        @extend .main-text;
+    }
+}
+
+.section-wrap5 {
+    padding-top: .2rem;
+    .container {
+        @extend .main-container;
+    }
+    .title-img {
+        width: 5.35rem;
+        height: 4.33rem;
+        margin: .1rem auto;
+        img {
+            width: 5.35rem;
+            height: 4.33rem;
+        }
+    }
+    .text {
+        @extend .main-text;
+        p {
+            text-indent: 0em;
+        }
+    }
+}
+
+.section-wrap6 {
+    padding-top: .2rem;
+    // .container {
+    // 	background: #fff000;
+    // }
+    ul {
+        border-bottom: 1px solid #d3d1d1;
+        &:last-child {
+            border: 0;
+        }
+        li {
+            text-align: center;
+            padding: .35rem 0;
+            border-left: 1px solid #d3d1d1;
+            &:first-child {
+                border: 0;
+            }
+        }
+        a {
+            display: block;
+            font-size: .26rem;
+            color: #363635;
+        }
+    }
+}
+
+.section-copyright {
+    background: #eee;
+    height: .76rem;
+    line-height: .76rem;
+    text-align: center;
+    font-size: .28rem;
+    color: #ababab;
+}
+
+.return-index {
+    display: block;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    background: #027a9b;
+    color: #fff;
+    font-size: .3rem;
+}
