@@ -5,6 +5,10 @@
 
 @import '../../../static/scss/_mobile_normalize.scss';
 $imgUrl: '/public/img/wx_business/';
+[v-cloak] {
+    display: none;
+}
+
 //Your style Here
 html,
 body {
@@ -75,6 +79,8 @@ ul {
 
 .section-banner {
     height: 3.61rem;
+    background: url('#{$imgUrl}product_banner_icon.jpg') no-repeat;
+    background-size: 100% 100%;
     .text {
         @include abs;
         top: 1.3rem;
@@ -83,27 +89,14 @@ ul {
     }
     span {
         display: block;
-        // opacity: 0;
     }
     .desc-1 {
         font-size: .48rem;
         line-height: .7rem;
-        // @include transition(all .4s ease-out);
-        // @include transform(translate3d(0, 3em, 0));
     }
     .desc-2 {
         font-size: .24rem;
         line-height: .6rem;
-        // @include transition(all .4s .5s ease-out);
-        // @include transform(translate3d(0, 3em, 0));
-    }
-    &.preload {
-        background: url('../img/product_banner_icon.jpg') no-repeat;
-        background-size: 100% 100%;
-        // span {
-        // 	opacity: 1;
-        // 	@include transform(translate3d(0, 0, 0));
-        // }
     }
 }
 

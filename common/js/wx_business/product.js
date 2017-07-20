@@ -3,25 +3,13 @@
  * @date    2017-02-17 10:41:38
  */
 
-
-
-/* 懒加载 */
-function lazyload() {
-  var $caseDetails = $('#J_product');
-  var $sections = $('.section', $caseDetails);
-
-  $sections.visibleWatcher({
-    onVisible: function($elm, index) {
-      $sections.filter(function(i) {
-        return i <= index + 1;
-      }).addClass('preload').find('img').each(function() {
-        var _src = $(this).attr('data-src');
-        $(this).attr('src', _src);
-      });
-    }
-  });
-}
-
-$(document).ready(function() {
-  lazyload();
+window.vm = new Vue({
+  el: '#app',
+  data: {
+    banner_text: [{
+      'title': '产品介绍'
+    }, {
+      'title': 'product description'
+    }]
+  }
 });

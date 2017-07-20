@@ -3,25 +3,27 @@
  * @date    2017-02-23 09:28:17
  */
 
-
-
-
-function lazyload() {
-  var $programme = $('#J_programme');
-  var $sections = $('.section', $programme);
-
-  $sections.visibleWatcher({
-    onVisible: function($elm, index) {
-      $sections.filter(function(i) {
-        return i <= index + 1;
-      }).addClass('preload').find('img').each(function() {
-        var _src = $(this).attr('data-src');
-        $(this).attr('src', _src);
-      });
-    }
-  });
-}
-
-$(document).ready(function() {
-  lazyload();
+window.vm = new Vue({
+  el: '#app',
+  data: {
+    logo: 'weixin_logo_icon.jpg',
+    content_1: [{
+      'title': '',
+      'href': 'planstore.html',
+      'img_url': 'programme_icon01.jpg'
+    }, {
+      'title': '',
+      'href': 'planDistribution.html',
+      'img_url': 'programme_icon02.jpg'
+    }],
+    content_2: [{
+      'title': '',
+      'href': 'planTradition.html',
+      'img_url': 'programme_icon03.jpg'
+    }, {
+      'title': '',
+      'href': 'planPlatform.html',
+      'img_url': 'programme_icon04.jpg'
+    }],
+  }
 });
